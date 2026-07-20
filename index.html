@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ChartMindAI strategy update — validate one governed finance workflow before scaling the platform.">
-  <title>ChartMindAI — Validate the Finance Workflow Wedge</title>
+  <meta name="description" content="Evidence-led ChartMindAI strategy: validate one export-first monthly performance brief before building a broader finance platform.">
+  <title>ChartMindAI — Evidence-Led Market Entry</title>
   <style>
     :root {
       --ink: #f3f7f4;
@@ -196,6 +196,188 @@
     .accent { color: var(--lime); }
     .teal { color: var(--teal-soft); }
     .coral { color: var(--coral); }
+
+    .cite {
+      display: inline-flex;
+      margin-left: 5px;
+      color: var(--teal-soft);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      vertical-align: 0.12em;
+    }
+
+    .cite:hover, .cite:focus-visible { color: var(--lime); text-decoration: underline; }
+    .cite:focus-visible { outline: 2px solid var(--teal-soft); outline-offset: 3px; }
+
+    .confidence {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 12px;
+      color: var(--status, var(--teal-soft));
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .confidence::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: 0 0 0 5px color-mix(in srgb, currentColor 10%, transparent);
+    }
+
+    .audit-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 34px;
+    }
+
+    .audit-card {
+      min-height: 210px;
+      padding: 22px 24px;
+      border-top: 2px solid var(--status);
+      background: linear-gradient(180deg, color-mix(in srgb, var(--status) 7%, transparent), transparent 70%);
+    }
+
+    .audit-card h3 { margin: 8px 0 13px; }
+    .audit-card p { margin-bottom: 12px; color: var(--ink-soft); font-size: 0.9rem; }
+    .audit-card small { color: var(--ink-faint); }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .stat-card {
+      min-height: 230px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-bottom: 4px solid var(--stat);
+      border-radius: 18px 18px 6px 6px;
+      background: linear-gradient(180deg, color-mix(in srgb, var(--stat) 8%, transparent), transparent 66%);
+    }
+
+    .stat-card strong {
+      display: block;
+      margin: 22px 0 13px;
+      color: var(--stat);
+      font-size: clamp(2.3rem, 5vw, 4.8rem);
+      line-height: 0.9;
+      letter-spacing: -0.07em;
+    }
+
+    .stat-card p { color: var(--ink-soft); font-size: 0.88rem; }
+    .stat-card small { color: var(--ink-faint); font-size: 0.72rem; }
+
+    .boundary-grid {
+      display: grid;
+      grid-template-columns: 0.72fr 1.28fr;
+      gap: clamp(34px, 7vw, 90px);
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .benchmark-stack { display: grid; gap: 15px; }
+
+    .benchmark-row {
+      padding: 18px 20px;
+      border-left: 3px solid var(--bench);
+      background: linear-gradient(90deg, color-mix(in srgb, var(--bench) 9%, transparent), transparent 72%);
+    }
+
+    .benchmark-row strong { color: var(--bench); font-size: 1.15rem; }
+    .benchmark-row p { margin: 5px 0 0; color: var(--ink-soft); font-size: 0.84rem; }
+
+    .control-stack {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      padding: 25px;
+      border: 1px solid rgba(181,230,111,0.28);
+      border-radius: var(--radius);
+      background: rgba(181,230,111,0.055);
+    }
+
+    .control {
+      min-height: 120px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(7,17,15,0.48);
+    }
+
+    .control span { color: var(--lime); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; }
+    .control strong { display: block; margin: 12px 0 6px; }
+    .control small { color: var(--ink-faint); }
+
+    .comparison-table {
+      width: 100%;
+      margin-top: 30px;
+      border-collapse: collapse;
+      background: rgba(11,23,20,0.55);
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .comparison-table th {
+      color: var(--ink-faint);
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .comparison-table td { color: var(--ink-soft); font-size: 0.84rem; }
+    .comparison-table td:first-child { color: var(--ink); font-weight: 700; }
+    .comparison-table tr:last-child td { border-bottom: 0; }
+    .comparison-table .cm-row { background: rgba(181,230,111,0.055); }
+    .comparison-table .cm-row td:first-child { color: var(--lime); }
+
+    .capacity-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: clamp(36px, 7vw, 90px);
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .capacity-bars { display: grid; gap: 18px; }
+    .capacity-row { display: grid; grid-template-columns: 130px 1fr auto; gap: 14px; align-items: center; }
+    .capacity-row span { color: var(--ink-soft); font-size: 0.82rem; }
+    .capacity-row strong { color: var(--ink); font-size: 0.82rem; }
+    .capacity-track { height: 18px; overflow: hidden; border-radius: 999px; background: rgba(255,255,255,0.05); }
+    .capacity-track i { display: block; width: var(--cap); height: 100%; background: var(--cap-color); }
+
+    .fit-list { display: grid; gap: 12px; }
+    .fit-item { padding: 16px 18px; border-left: 2px solid var(--fit); background: color-mix(in srgb, var(--fit) 5%, transparent); }
+    .fit-item strong { display: block; margin-bottom: 5px; }
+    .fit-item span { color: var(--ink-soft); font-size: 0.85rem; }
+
+    .source-register {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .source-register .source-block {
+      padding: 18px;
+      border-top: 1px solid var(--line);
+    }
 
     .eyebrow {
       display: inline-flex;
@@ -1330,6 +1512,8 @@
       .hero-grid,
       .target-grid,
       .roi-layout,
+      .boundary-grid,
+      .capacity-grid,
       .moat-layout,
       .partner-layout,
       .sources-layout { grid-template-columns: 1fr; }
@@ -1344,6 +1528,7 @@
       .market-layer { grid-template-columns: 150px 1fr; }
       .market-layer .implication { grid-column: 2; text-align: left; }
       .buyer-map, .roadmap, .risks-grid { grid-template-columns: 1fr 1fr; }
+      .stat-grid, .source-register { grid-template-columns: repeat(2, 1fr); }
       .buyer-card::after { display: none; }
       .gates { grid-template-columns: repeat(3, 1fr); }
       .timeline { grid-template-columns: repeat(3, 1fr); gap: 28px 12px; }
@@ -1460,6 +1645,34 @@
       .risk { min-height: 218px; padding: 18px; }
       .risk h3 { margin: 22px 0 8px; }
 
+      .audit-card { min-height: 175px; padding: 18px 20px; }
+      .stat-card { min-height: 185px; padding: 18px; }
+      .stat-card strong { margin: 14px 0 9px; font-size: 3.4rem; }
+      .benchmark-row { padding: 12px 16px; }
+      .control { min-height: 96px; padding: 12px 14px; }
+      .comparison-table th, .comparison-table td { padding: 10px 13px; }
+      .fit-item { padding: 11px 15px; }
+
+      #decision .audit-grid { gap: 10px; margin-top: 18px; }
+      #decision .audit-card { min-height: 150px; padding: 12px 16px; }
+      #decision .audit-card h3 { margin: 4px 0 7px; }
+      #decision .audit-card p { margin-bottom: 6px; font-size: 0.79rem; }
+      #decision .audit-card small { font-size: 0.69rem; }
+
+      #buyer .capacity-grid { gap: 34px; margin-top: 12px; }
+      #buyer .capacity-bars { gap: 12px; }
+      #buyer .fit-list { gap: 6px; }
+      #buyer .fit-item { padding: 8px 12px; }
+      #buyer .fit-item span { font-size: 0.76rem; }
+
+      #source-register .source-register { gap: 8px 14px; margin-top: 10px; }
+      #source-register .source-block { margin: 0; padding: 9px 14px; }
+      #source-register .source-block h3 { margin-bottom: 7px; }
+      #source-register .source-list-links { gap: 3px; }
+      #source-register .source-list-links a,
+      #source-register .source-list-links span { font-size: 0.71rem; }
+      #source-register .footer-mark { margin-top: 10px; }
+
       .roadmap { margin-top: 22px; }
       .roadmap-step { min-height: 224px; padding: 18px; }
       .roadmap-step h3 { margin: 18px 0 12px; }
@@ -1481,6 +1694,7 @@
       .pain-node svg { width: 42px; height: 42px; }
       #problem .pain-node { width: 80px; height: 80px; margin: 0; }
       .quote-band, .evidence-strip, .gem-row, .decision-rules { grid-template-columns: 1fr; }
+      .audit-grid, .stat-grid, .control-stack, .source-register { grid-template-columns: 1fr; }
       .target-copy .dl-row { grid-template-columns: 86px 1fr; }
       .bullseye { width: min(430px, 100%); }
       .waterfall-panel { padding: 18px 12px; }
@@ -1494,6 +1708,9 @@
       .gates { grid-template-columns: repeat(2, 1fr); }
       .gate { min-height: 245px; }
       .final-call { grid-template-columns: 1fr; }
+      .capacity-row { grid-template-columns: 100px 1fr; }
+      .capacity-row strong { grid-column: 2; }
+      .comparison-table { display: block; overflow-x: auto; }
       .moat-layout { gap: 18px; }
       .flywheel { transform: scale(0.94); }
       .scroll-cue { display: none; }
@@ -1539,12 +1756,12 @@
 
         <div class="hero-grid">
           <div>
-            <span class="eyebrow">Corrected direction</span>
-            <h1>Own one <span class="accent">constrained finance workflow</span> first.</h1>
-            <p class="lead">Keep the MCP and charting substrate. Productise a repeatable finance workflow with a finite semantic contract, permission-aware access, traceable evidence and human approval. The monthly SaaS revenue pack is candidate #1—not a proven market.</p>
+            <span class="eyebrow">Evidence-led recommendation</span>
+            <h1>Sell one <span class="accent">monthly performance brief</span> first.</h1>
+            <p class="lead">For lean B2B software finance teams, turn a small set of existing exports and the prior approved pack into reconciled KPIs, variance commentary, editable slides and an evidence manifest. Keep a human sign-off. Do not build a broader FP&amp;A platform yet.</p>
             <div class="hero-note">
               <span>!</span>
-              <div><strong>The new discussions sharpen the product and GTM.</strong><br>Reliable agents need constrained questions, stable metadata and permissions; enterprise entry needs a specific task, hands-on adoption and a credible internal champion.</div>
+              <div><strong>This is a 90-day validation thesis—not product-market fit.</strong><br>The pain and control pattern are supported; the exact buyer, workflow, price, ROI and repeatability still have to be earned.</div>
             </div>
           </div>
 
@@ -1553,145 +1770,106 @@
               <path d="M10 94 66 43l32 30 63-60" fill="none" stroke="#b5e66f" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="m143 10 25-5-5 25" fill="none" stroke="#d9f7a7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <span class="channel">Technical substrate</span>
-            <p class="product">Data + semantic contract + permissions + evidence + approval → <span class="accent">Governed Finance Workflow</span></p>
+            <span class="channel">Smallest defensible entry</span>
+            <p class="product">Existing exports → target a <span class="accent">reviewed performance brief</span> in days, not a platform migration</p>
           </div>
         </div>
       </div>
       <div class="scroll-cue">Scroll or use arrow keys</div>
     </section>
 
-    <section class="slide" id="decision" data-index="01" data-title="Strategic fork">
-      <div class="mini-nav"><span>Question 1</span><span>Product category</span></div>
+    <section class="slide" id="decision" data-index="01" data-title="Research verdict">
+      <div class="mini-nav"><span>Strategy audit</span><span>Evidence classification</span></div>
       <div class="slide-inner">
-        <p class="kicker">The strategic fork</p>
-        <h2>Choose one game. <span class="accent">Prove the functional one.</span></h2>
-        <p class="lead">The evidence favours a role-specific, constrained workflow over horizontal analytics infrastructure. Generic AI positioning is crowded; the exact finance job still has to earn focus.</p>
+        <p class="kicker">Research verdict</p>
+        <h2>The backbone survives. <span class="coral">The differentiation does not.</span></h2>
+        <p class="lead">Independent research, current vendor products, open-source projects, private discovery and the codebase support a narrow finance workflow—but not a broad platform, premium pilot price or defensibility claim.</p>
 
-        <div class="fork">
-          <article class="path chosen">
-            <div class="path-icon" aria-hidden="true">◎</div>
-            <span class="eyebrow">Choose</span>
-            <h3>Functional vertical product</h3>
-            <p>Own a recurring business outcome for a tightly defined operator.</p>
-            <ul>
-              <li>Start with finite questions and outputs</li>
-              <li>Compound semantics, rules and exceptions</li>
-              <li>Expand from one trusted workflow</li>
-            </ul>
+        <div class="audit-grid">
+          <article class="audit-card" style="--status:#86e0cf">
+            <span class="confidence" style="--status:#86e0cf">Supported</span>
+            <h3>The problem and control pattern</h3>
+            <p>Finance teams still lose substantial time to data collection and validation. Bounded tasks, explicit definitions, traceability and human oversight match both research and discovery.</p>
+            <small><a class="cite" href="https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/services/consulting/documents/ey-gl-fpa-trends-research-2026-ey-fpa-operating-model-06-2026.pdf" target="_blank" rel="noreferrer">EY / FP&amp;A Trends 2026 ↗</a> <a class="cite" href="https://airc.nist.gov/airmf-resources/airmf/5-sec-core/" target="_blank" rel="noreferrer">NIST AI RMF ↗</a></small>
           </article>
-
-          <div class="fork-vs">OR</div>
-
-          <article class="path">
-            <div class="path-icon" aria-hidden="true">⌘</div>
-            <span class="eyebrow" style="border-color:var(--line);color:var(--ink-faint);background:transparent">Do not mix</span>
-            <h3>Horizontal DevTool / infrastructure</h3>
-            <p>Sell MCP analytics, semantic access and governance to technical buyers.</p>
-            <ul>
-              <li>Broad and increasingly crowded</li>
-              <li>Requires developer-first distribution</li>
-              <li>Competes with open standards and platforms</li>
-            </ul>
+          <article class="audit-card" style="--status:#ff826f">
+            <span class="confidence" style="--status:#ff826f">Contradicted</span>
+            <h3>“Governed finance workflow” is not a moat</h3>
+            <p>Current FP&amp;A products already market trusted data, clarifying flows, finance context, approvals, traceability and editable outputs; some now add MCP.</p>
+            <small><a class="cite" href="https://www.abacum.ai/product/intelligence" target="_blank" rel="noreferrer">Abacum ↗</a> <a class="cite" href="https://support.datarails.com/hc/en-us/articles/25257415989916-Introduction-to-Datarails-AI-Agents" target="_blank" rel="noreferrer">Datarails agents ↗</a> <a class="cite" href="https://www.datarails.com/v2/" target="_blank" rel="noreferrer">FinanceOS ↗</a></small>
           </article>
-        </div>
-
-        <div class="verdict"><strong>VERDICT</strong><span>Prioritise the governed finance-workflow layer. Treat monthly SaaS revenue reporting as the first candidate to earn—not assume—product priority.</span></div>
-      </div>
-    </section>
-
-    <section class="slide" id="problem" data-index="02" data-title="Pain">
-      <div class="mini-nav"><span>Question 2</span><span>Pain + ROI</span></div>
-      <div class="slide-inner">
-        <p class="kicker">The painful job</p>
-        <h2>AI removes the grunt work. <span class="coral">The last 10–20% still decides trust.</span></h2>
-        <p class="lead">Generic models can already build models, charts and decks. The harder product problem is encoding expert method, adapting uneven private data, surfacing missing context and making the result safe to approve.</p>
-
-        <div class="pain-flow" aria-label="Workflow from fragmented data to a board-ready decision">
-          <div class="pain-step">
-            <div class="pain-node" aria-hidden="true">
-              <svg viewBox="0 0 64 64"><rect x="6" y="9" width="20" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="3"/><rect x="38" y="6" width="20" height="22" rx="3" fill="none" stroke="currentColor" stroke-width="3"/><rect x="18" y="38" width="28" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="3"/><path d="M16 27v7h16m16-6v6H32v4" fill="none" stroke="currentColor" stroke-width="3"/></svg>
-            </div>
-            <div><strong>Find</strong><span>CRM, billing, GL, product</span></div>
-          </div>
-          <div class="pain-step">
-            <div class="pain-node" aria-hidden="true">
-              <svg viewBox="0 0 64 64"><path d="M9 18h19m8 0h19M9 32h32m8 0h6M9 46h10m8 0h28" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="18" r="4" fill="currentColor"/><circle cx="45" cy="32" r="4" fill="currentColor"/><circle cx="23" cy="46" r="4" fill="currentColor"/></svg>
-            </div>
-            <div><strong>Map</strong><span>Keys, periods, ownership</span></div>
-          </div>
-          <div class="pain-step">
-            <div class="pain-node" aria-hidden="true">
-              <svg viewBox="0 0 64 64"><path d="M13 22h38M18 14l-8 8 8 8M51 42H13m33-8 8 8-8 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div><strong>Reconcile</strong><span>Make systems agree</span></div>
-          </div>
-          <div class="pain-step">
-            <div class="pain-node" aria-hidden="true">
-              <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="3"/><path d="m21 33 7 7 15-17" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div><strong>Approve</strong><span>Resolve exceptions</span></div>
-          </div>
-          <div class="pain-step">
-            <div class="pain-node" aria-hidden="true">
-              <svg viewBox="0 0 64 64"><rect x="9" y="12" width="46" height="39" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M17 40V31m10 9V22m10 18V28m10 12V18" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
-            </div>
-            <div><strong>Decide</strong><span>Board-ready narrative</span></div>
-          </div>
-        </div>
-
-        <div class="quote-band">
-          <div class="time-punch"><strong>1wk→1.5d</strong><span>one corporate-finance power user’s observed end-to-end improvement with self-built AI skills—not a ChartMindAI performance claim</span></div>
-          <div class="evidence-strip">
-            <div class="evidence-chip"><strong>Corporate-finance power user</strong>Reusable skills accelerate multistage work; the final 10–20% remains expert judgement.<br><small>Private discovery</small></div>
-            <div class="evidence-chip"><strong>Enterprise security strategist</strong>Data location, inference control, auditability and upgrade ownership can determine acceptability.<br><small>Private discovery</small></div>
-            <div class="evidence-chip"><strong>Enterprise data-platform practitioners</strong>Agents became reliable when constrained by templates, metadata, tools, clarifying questions and permissions.<br><small>Private discovery</small></div>
-            <div class="evidence-chip"><strong>Sector investor / operator</strong>Vertical relevance and a warm internal champion cut through generic AI noise; large enterprises often engage later.<br><small>Private discovery</small></div>
-          </div>
+          <article class="audit-card" style="--status:#ffc866">
+            <span class="confidence" style="--status:#ffc866">Reasonable inference</span>
+            <h3>Export-first is the right entry</h3>
+            <p>A small team can test value faster by accepting existing files and returning an editable, reviewed artifact—without integrations, writes or a replacement decision.</p>
+            <small>Inference from team capacity, category competition and design-partner practice. <a class="cite" href="https://a16z.com/a-framework-for-finding-a-design-partner/" target="_blank" rel="noreferrer">a16z ↗</a></small>
+          </article>
+          <article class="audit-card" style="--status:#79a9ff">
+            <span class="confidence" style="--status:#79a9ff">Unresolved</span>
+            <h3>The commercial wedge</h3>
+            <p>There is not yet matched evidence that monthly B2B SaaS reporting is urgent enough, that two customers will pay, or that the solution can repeat without bespoke services.</p>
+            <small>Requires real artifacts, two cycles and paid commitment—not more desk research.</small>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="slide" id="customer" data-index="03" data-title="Customer">
-      <div class="mini-nav"><span>Questions 2 + 6</span><span>Beachhead</span></div>
+    <section class="slide" id="problem" data-index="02" data-title="Pain evidence">
+      <div class="mini-nav"><span>Verified problem</span><span>Independent research</span></div>
       <div class="slide-inner">
-        <div class="target-grid">
-          <div class="target-copy">
-            <p class="kicker">Target customer</p>
-            <h2>Recruit by <span class="accent">workflow and behaviour</span>, not logo.</h2>
-            <p class="lead">Use UK/EU fintech and B2B SaaS companies with 50–300 people as a recruiting filter—not a validated ICP.</p>
-            <dl>
-              <div class="dl-row"><dt>Workflow</dt><dd><strong>Recurring, multistage finance work</strong> ending in a reviewed decision artifact</dd></div>
-              <div class="dl-row"><dt>User</dt><dd><strong>Senior finance operator</strong> already supervising AI, analysts or both</dd></div>
-              <div class="dl-row"><dt>Company</dt><dd><strong>50–300 employees</strong>, lean team, private data and a short buying chain</dd></div>
-              <div class="dl-row"><dt>Qualifies</dt><dd><strong>Shares redacted artifacts and pays</strong> to improve a live workflow</dd></div>
-            </dl>
+        <p class="kicker">The problem is credible</p>
+        <h2>Finance still spends too much time <span class="coral">preparing the truth.</span></h2>
+        <p class="lead">The strongest evidence is not “finance wants AI.” It is that fragmented, unreliable data and spreadsheet-heavy reporting consume scarce FP&amp;A capacity. Technology alone does not repair poor definitions or process.</p>
+
+        <div class="stat-grid" role="list" aria-label="Independent evidence on FP&amp;A data and reporting pain">
+          <article class="stat-card" role="listitem" style="--stat:#ff826f"><span class="confidence" style="--status:#ff826f">Observed</span><strong>46%</strong><p>of FP&amp;A effort is spent on data collection and validation.</p><small><a class="cite" href="https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/services/consulting/documents/ey-gl-fpa-trends-research-2026-ey-fpa-operating-model-06-2026.pdf" target="_blank" rel="noreferrer">EY / FP&amp;A Trends 2026 ↗</a></small></article>
+          <article class="stat-card" role="listitem" style="--stat:#ffc866"><span class="confidence" style="--status:#ffc866">Observed</span><strong>31%</strong><p>of FP&amp;A time is spent on insight and action.</p><small><a class="cite" href="https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/services/consulting/documents/ey-gl-fpa-trends-research-2026-ey-fpa-operating-model-06-2026.pdf" target="_blank" rel="noreferrer">EY / FP&amp;A Trends 2026 ↗</a></small></article>
+          <article class="stat-card" role="listitem" style="--stat:#79a9ff"><span class="confidence" style="--status:#79a9ff">Observed</span><strong>61%</strong><p>cite unreliable data; 60% cite inaccessible data as barriers.</p><small><a class="cite" href="https://www.financialprofessionals.org/training-resources/resources/survey-research-economic-data/Details/FPABenchmarking" target="_blank" rel="noreferrer">AFP 2025 ↗</a></small></article>
+          <article class="stat-card" role="listitem" style="--stat:#86e0cf"><span class="confidence" style="--status:#86e0cf">Observed</span><strong>93%</strong><p>use spreadsheets for reporting on a daily or weekly basis.</p><small><a class="cite" href="https://www.financialprofessionals.org/training-resources/resources/survey-research-economic-data/Details/FPABenchmarking" target="_blank" rel="noreferrer">AFP 2025 ↗</a></small></article>
+        </div>
+
+        <div class="verdict"><strong>IMPLICATION</strong><span>Enter through the reporting artifact teams already produce. Improve preparation, reconciliation and review before asking them to replace planning systems.</span></div>
+      </div>
+    </section>
+
+    <section class="slide" id="customer" data-index="03" data-title="Reliability boundary">
+      <div class="mini-nav"><span>Product constraint</span><span>Current model limits</span></div>
+      <div class="slide-inner">
+        <p class="kicker">Why the workflow must be bounded</p>
+        <h2>Current agents are useful—<span class="coral">not safe to trust alone.</span></h2>
+        <p class="lead">Recent benchmarks point in the same direction: realistic finance spreadsheets, chained work and proprietary business rules remain difficult. The studies are new preprints, so the exact scores may move; the reliability boundary is the important signal.</p>
+
+        <div class="boundary-grid">
+          <div class="benchmark-stack">
+            <article class="benchmark-row" style="--bench:#ff826f"><strong>82.4% best overall accuracy</strong><p>FinSheet-Bench; no standalone model met unsupervised professional-finance reliability. <a class="cite" href="https://arxiv.org/abs/2603.07316" target="_blank" rel="noreferrer">preprint ↗</a></p></article>
+            <article class="benchmark-row" style="--bench:#ffc866"><strong>Degrades with chained work</strong><p>WorkstreamBench found even leading agents frequently below professional standards. <a class="cite" href="https://arxiv.org/abs/2605.22664" target="_blank" rel="noreferrer">preprint ↗</a></p></article>
+            <article class="benchmark-row" style="--bench:#79a9ff"><strong>15.9% with enterprise context</strong><p>EntSQL’s best evaluated system on English inputs with long-form proprietary documents. <a class="cite" href="https://arxiv.org/abs/2606.03363" target="_blank" rel="noreferrer">preprint ↗</a></p></article>
           </div>
 
-          <div class="bullseye" role="img" aria-label="Recruiting bullseye: UK and EU fintech or B2B SaaS companies with 50 to 300 people, a recurring finance workflow, active AI use and willingness to share artifacts">
-            <div class="ring ring-1">UK / EU</div>
-            <div class="ring ring-2">Fintech / B2B SaaS</div>
-            <div class="ring ring-3">50–300 people</div>
-            <div class="ring-core">ARTIFACT<br>ACCESS +<br>BUDGET</div>
+          <div class="control-stack" role="list" aria-label="Controls required for a bounded finance workflow">
+            <div class="control" role="listitem"><span>01 · SCOPE</span><strong>Finite questions</strong><small>One recurring pack; no arbitrary analysis.</small></div>
+            <div class="control" role="listitem"><span>02 · CALCULATE</span><strong>Deterministic metrics</strong><small>Rules and reconciliations outside free-form generation.</small></div>
+            <div class="control" role="listitem"><span>03 · EXPLAIN</span><strong>Evidence manifest</strong><small>Source, definition, check and exception per material figure.</small></div>
+            <div class="control" role="listitem"><span>04 · APPROVE</span><strong>Named human owner</strong><small>No autonomous publishing or source-system writes.</small></div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="slide" id="wedge" data-index="04" data-title="Product wedge">
-      <div class="mini-nav"><span>Question 5</span><span>Narrowest wedge</span></div>
+      <div class="mini-nav"><span>Product thesis</span><span>Narrowest wedge</span></div>
       <div class="slide-inner">
-        <p class="kicker">Candidate #1 · not yet the company strategy</p>
-        <h2>Use the ARR pack to test the <span class="accent">workflow product pattern</span>.</h2>
-        <p class="lead">Three standard exports plus the prior approved pack test whether a finite question set, reusable semantic core and small organisation layer can produce a trusted monthly output.</p>
+        <p class="kicker">One job · one operator · one reviewed output</p>
+        <h2>Start with the <span class="accent">monthly performance brief.</span></h2>
+        <p class="lead">Recruit lean B2B software finance teams with a monthly management or board pack, a named sponsor, exportable data and a willingness to share redacted artifacts. This is a design-partner filter—not a validated ICP.</p>
 
         <div class="wedge-pipeline" aria-label="Product wedge from four inputs through a revenue reporting contract to four outputs">
           <article class="pipe-box">
-            <div class="pipe-label">Inputs / no live integration required</div>
+            <div class="pipe-label">Inputs / maximum three exports</div>
             <div class="source-list">
-              <div class="source-item"><span>CRM</span><span>Deals, stages, owners</span></div>
-              <div class="source-item"><span>£</span><span>Billing export</span></div>
-              <div class="source-item"><span>GL</span><span>Finance summary</span></div>
+              <div class="source-item"><span>CRM</span><span>Pipeline or contract export</span></div>
+              <div class="source-item"><span>£</span><span>Billing / revenue export</span></div>
+              <div class="source-item"><span>GL</span><span>P&amp;L or finance summary</span></div>
               <div class="source-item"><span>P−1</span><span>Prior signed-off pack</span></div>
             </div>
           </article>
@@ -1700,9 +1878,9 @@
 
           <article class="pipe-box center">
             <div class="pipe-label">Reusable core + customer layer</div>
-            <h3>Monthly Revenue Workflow Pack</h3>
+            <h3>Monthly Performance Brief</h3>
             <div class="contract-stack" aria-hidden="true">
-              <div class="contract-sheet"><strong>WORKFLOW CONTRACT</strong><span>Allowed questions · inputs · semantic definitions · source mappings · permission checks · clarifications · approvals · output</span></div>
+              <div class="contract-sheet"><strong>WORKFLOW CONTRACT</strong><span>Agreed KPIs · definitions · source mappings · exceptions · checks · approvals · editable output</span></div>
             </div>
           </article>
 
@@ -1712,35 +1890,35 @@
             <div class="pipe-label">Outputs / reviewed before release</div>
             <div class="output-list">
               <div class="output-item"><span>✓</span><span>Reconciled metric table</span></div>
-              <div class="output-item"><span>↗</span><span>ARR bridge</span></div>
+              <div class="output-item"><span>↗</span><span>KPI / ARR movement bridge</span></div>
               <div class="output-item"><span>¶</span><span>Variance commentary</span></div>
               <div class="output-item"><span>▤</span><span>2–3 editable slides + evidence manifest</span></div>
             </div>
           </article>
         </div>
-        <p class="wedge-caption"><strong>Explicitly out during validation:</strong> arbitrary natural-language queries, forecasting suite, generic dashboards, dozens of connectors, source-system writes and customer-specific deployment variants.</p>
+        <p class="wedge-caption"><strong>Explicitly out for 90 days:</strong> forecasting, generic dashboards, live connectors, customer-hosted variants, source-system writes and broad natural-language analysis. <a class="cite" href="https://a16z.com/a-framework-for-finding-a-design-partner/" target="_blank" rel="noreferrer">design-partner rationale ↗</a></p>
       </div>
     </section>
 
     <section class="slide" id="proof" data-index="05" data-title="Proof surface">
       <div class="mini-nav"><span>Product demonstration</span><span>Evidence by design</span></div>
       <div class="slide-inner">
-        <p class="kicker">Candidate product proof</p>
+        <p class="kicker">Illustrative product proof</p>
         <h2>Every number should answer: <span class="accent">“Why can I trust this?”</span></h2>
-        <p class="lead">If the ARR candidate wins, every movement must expose its source, rule, check and human owner. Select a movement to inspect the illustrative evidence trail.</p>
+        <p class="lead">The brief earns trust only if each material movement exposes its source, definition, check and human owner. Select a movement to inspect the illustrative evidence trail. Values below are a product mock-up, not customer results.</p>
 
         <div class="report-demo">
           <article class="waterfall-panel">
             <div class="panel-head"><h3>July ARR bridge</h3><span>Illustrative product interaction · £m</span></div>
             <div class="waterfall" role="group" aria-label="Illustrative ARR bridge from 10.4 million to 11.1 million pounds">
               <span class="waterfall-baseline">£m</span>
-              <div class="waterfall-col"><button class="wf-bar" type="button" aria-pressed="true" data-key="begin" style="--bottom:0%;--height:74%;--bar:#36c4ae"><span class="value">10.4</span></button><span class="label">Beginning</span></div>
-              <div class="waterfall-col"><button class="wf-bar" type="button" aria-pressed="false" data-key="new" style="--bottom:74%;--height:11%;--bar:#b5e66f"><span class="value">+1.5</span></button><span class="label">New</span></div>
-              <div class="waterfall-col"><button class="wf-bar" type="button" aria-pressed="false" data-key="expand" style="--bottom:85%;--height:6%;--bar:#86e0cf"><span class="value">+0.8</span></button><span class="label">Expansion</span></div>
-              <div class="waterfall-col"><button class="wf-bar" type="button" aria-pressed="false" data-key="contract" style="--bottom:85%;--height:6%;--bar:#ffc866"><span class="value">−0.8</span></button><span class="label">Contraction</span></div>
-              <div class="waterfall-col"><button class="wf-bar" type="button" aria-pressed="false" data-key="churn" style="--bottom:75%;--height:10%;--bar:#ff826f"><span class="value">−1.4</span></button><span class="label">Churn</span></div>
-              <div class="waterfall-col"><button class="wf-bar" type="button" aria-pressed="false" data-key="fx" style="--bottom:75%;--height:4%;--bar:#79a9ff"><span class="value">+0.6</span></button><span class="label">FX / other</span></div>
-              <div class="waterfall-col"><button class="wf-bar" type="button" aria-pressed="false" data-key="end" style="--bottom:0%;--height:79%;--bar:#b5e66f"><span class="value">11.1</span></button><span class="label">Ending</span></div>
+              <div class="waterfall-col"><button class="wf-bar" type="button" aria-label="Beginning ARR: £10.4 million" aria-pressed="true" data-key="begin" style="--bottom:0%;--height:74%;--bar:#36c4ae"><span class="value">10.4</span></button><span class="label">Beginning</span></div>
+              <div class="waterfall-col"><button class="wf-bar" type="button" aria-label="New ARR: plus £1.5 million" aria-pressed="false" data-key="new" style="--bottom:74%;--height:11%;--bar:#b5e66f"><span class="value">+1.5</span></button><span class="label">New</span></div>
+              <div class="waterfall-col"><button class="wf-bar" type="button" aria-label="Expansion ARR: plus £0.8 million" aria-pressed="false" data-key="expand" style="--bottom:85%;--height:6%;--bar:#86e0cf"><span class="value">+0.8</span></button><span class="label">Expansion</span></div>
+              <div class="waterfall-col"><button class="wf-bar" type="button" aria-label="Contraction ARR: minus £0.8 million" aria-pressed="false" data-key="contract" style="--bottom:85%;--height:6%;--bar:#ffc866"><span class="value">−0.8</span></button><span class="label">Contraction</span></div>
+              <div class="waterfall-col"><button class="wf-bar" type="button" aria-label="Churned ARR: minus £1.4 million" aria-pressed="false" data-key="churn" style="--bottom:75%;--height:10%;--bar:#ff826f"><span class="value">−1.4</span></button><span class="label">Churn</span></div>
+              <div class="waterfall-col"><button class="wf-bar" type="button" aria-label="Foreign exchange and other ARR: plus £0.6 million" aria-pressed="false" data-key="fx" style="--bottom:75%;--height:4%;--bar:#79a9ff"><span class="value">+0.6</span></button><span class="label">FX / other</span></div>
+              <div class="waterfall-col"><button class="wf-bar" type="button" aria-label="Ending ARR: £11.1 million" aria-pressed="false" data-key="end" style="--bottom:0%;--height:79%;--bar:#b5e66f"><span class="value">11.1</span></button><span class="label">Ending</span></div>
             </div>
           </article>
 
@@ -1754,99 +1932,67 @@
               <div class="lineage-row"><dt>Check</dt><dd id="lineageCheck">Matches prior signed-off value</dd></div>
               <div class="lineage-row"><dt>Owner</dt><dd id="lineageOwner">FP&amp;A Manager · approved 03 Jul</dd></div>
             </dl>
-            <span class="trace-pill">Trace target: under 60 seconds</span>
+            <span class="trace-pill">Pilot hypothesis: trace in under 60 seconds</span>
           </aside>
         </div>
       </div>
     </section>
 
-    <section class="slide" id="roi" data-index="06" data-title="ROI">
-      <div class="mini-nav"><span>Question 2</span><span>Measurable ROI</span></div>
+    <section class="slide" id="roi" data-index="06" data-title="Design-partner filter">
+      <div class="mini-nav"><span>Who to recruit</span><span>Behaviour before firmographics</span></div>
       <div class="slide-inner">
-        <p class="kicker">Pilot scorecard</p>
-        <h2>Sell the <span class="accent">cycle-time and confidence</span>, not AI.</h2>
-        <p class="lead">One power user demonstrates the size of AI leverage, but ChartMindAI has not produced it. The pilot must establish its own baseline, quality and willingness-to-pay evidence.</p>
+        <p class="kicker">Design-partner filter · not an ICP claim</p>
+        <h2>Choose the shortest path to <span class="accent">real artifacts and a real decision.</span></h2>
+        <p class="lead">Prefer warm-access B2B software or tech-enabled businesses with a lean finance team. Avoid regulated, enterprise-procurement-heavy and customer-hosted deployments until value is demonstrated.</p>
 
         <div class="roi-layout">
           <div class="roi-targets">
-            <div class="roi-target"><strong>~70%</strong><span>observed cycle-time reduction by one power user using a self-built AI workflow</span></div>
-            <div class="roi-target"><strong>≥50%</strong><span>ChartMindAI pilot target for preparation + review time</span></div>
-            <div class="roi-target"><strong>0</strong><span>unexplained material discrepancies at sign-off</span></div>
-            <div class="roi-target"><strong>&lt;60s</strong><span>to trace a reported metric to evidence</span></div>
+            <div class="roi-target"><strong>1–5</strong><span>people in the finance team; small enough for a short buying chain</span></div>
+            <div class="roi-target"><strong>≤3</strong><span>exported inputs plus the prior approved pack</span></div>
+            <div class="roi-target"><strong>1</strong><span>operator who owns the monthly cycle and can approve the result</span></div>
+            <div class="roi-target"><strong>2</strong><span>live cycles required before any repeatability claim</span></div>
           </div>
 
-          <div class="cycle-chart" role="img" aria-label="Evidence ladder comparing one power user's observed self-built AI workflow with the proposed ChartMindAI pilot threshold">
-            <div class="panel-head"><h3>Evidence ladder</h3><span>Observed ≠ product claim</span></div>
-            <div class="cycle-row">
-              <div class="cycle-label"><span>Power user · before</span><strong>~1 week</strong></div>
-              <div class="cycle-bar">
-                <div class="cycle-segment seg-collect" style="width:100%">company analysis → acquisition case</div>
-              </div>
-            </div>
-            <div class="cycle-row">
-              <div class="cycle-label"><span>Power user · self-built workflow</span><strong>~1.5 days</strong></div>
-              <div class="cycle-bar" style="width:30%">
-                <div class="cycle-segment seg-reconcile" style="width:100%">observed</div>
-              </div>
-            </div>
-            <div class="cycle-row">
-              <div class="cycle-label"><span>ChartMindAI design-partner gate</span><strong>≤50%</strong></div>
-              <div class="cycle-bar" style="width:50%">
-                <div class="cycle-segment seg-review" style="width:100%">hypothesis</div>
-              </div>
-            </div>
-            <span class="hypothesis-tag">Different workflow, one user, self-built solution. Useful magnitude signal; not evidence that the ARR wedge or ChartMindAI delivers the same result.</span>
+          <div class="cycle-chart">
+            <div class="panel-head"><h3>Qualification sequence</h3><span>Fast “no” is useful</span></div>
+            <div class="cycle-row"><div class="cycle-label"><span>1 · Pain</span><strong>Does the same reporting job recur?</strong></div><div class="cycle-bar"><div class="cycle-segment seg-collect" style="width:100%">baseline time + review loops</div></div></div>
+            <div class="cycle-row"><div class="cycle-label"><span>2 · Access</span><strong>Will they share artifacts?</strong></div><div class="cycle-bar"><div class="cycle-segment seg-reconcile" style="width:100%">redacted files + definitions</div></div></div>
+            <div class="cycle-row"><div class="cycle-label"><span>3 · Authority</span><strong>Can the sponsor decide?</strong></div><div class="cycle-bar"><div class="cycle-segment seg-explain" style="width:100%">operator + finance owner</div></div></div>
+            <div class="cycle-row"><div class="cycle-label"><span>4 · Commitment</span><strong>Will they pay or deposit?</strong></div><div class="cycle-bar"><div class="cycle-segment seg-review" style="width:100%">commercial evidence</div></div></div>
+            <span class="hypothesis-tag">Firmographic range, price and ROI remain unresolved. The filter is designed to create evidence quickly, not describe a proven market.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="slide" id="market" data-index="07" data-title="Market">
-      <div class="mini-nav"><span>Questions 1 + 4</span><span>Competitive reality</span></div>
+    <section class="slide" id="market" data-index="07" data-title="Competitive reality">
+      <div class="mini-nav"><span>Competitive review</span><span>What not to build</span></div>
       <div class="slide-inner">
-        <p class="kicker">Market pressure map</p>
-        <h2>Generic analytics is being <span class="coral">absorbed from every side</span>.</h2>
-        <p class="lead">The opening is not another chat-to-chart layer or generic AI pitch. It is a vertical, recurring decision workflow that constrains ambiguity by design.</p>
+        <p class="kicker">The category is ahead of the old thesis</p>
+        <h2>Trusted finance workflows are already <span class="coral">a product category.</span></h2>
+        <p class="lead">Current vendor and open-source products remove “semantics + evidence + approval + MCP” as a credible near-term differentiator. Their feature claims are vendor evidence—not proof of customer outcomes—but they clearly define the competitive baseline.</p>
 
-        <div class="market-layers">
-          <div class="market-layer" style="--layer:#ff826f">
-            <div class="layer-name">Platform baseline</div>
-            <div class="players"><span class="player">ChatGPT Data Analysis</span><span class="player">Power BI Copilot</span></div>
-            <div class="implication">Charts, summaries and spreadsheet work are rapidly commoditising.</div>
-          </div>
-          <div class="market-layer" style="--layer:#ffc866">
-            <div class="layer-name">Semantic infrastructure</div>
-            <div class="players"><span class="player">Motley / SLayer</span><span class="player">Cube</span><span class="player">dbt MetricFlow</span></div>
-            <div class="implication">Governed metrics over MCP is already an active category.</div>
-          </div>
-          <div class="market-layer" style="--layer:#79a9ff">
-            <div class="layer-name">Broad FP&amp;A suites</div>
-            <div class="players"><span class="player">Datarails</span><span class="player">Abacum</span><span class="player">Aleph</span></div>
-            <div class="implication">Consolidation, planning and reporting are well funded and broad.</div>
-          </div>
-          <div class="market-layer wedge" style="--layer:#b5e66f">
-            <div class="layer-name">ChartMindAI wedge</div>
-            <div class="players"><span class="player">One finance workflow</span><span class="player">Finite question library</span><span class="player">Semantics + evidence + approval</span></div>
-            <div class="implication"><strong>Win by being narrower, easier to adopt and safer to trust.</strong></div>
-          </div>
-        </div>
-
-        <div class="gem-row">
-          <div class="gem"><div class="gem-icon">H</div><div><strong>Harness lesson</strong><span>Generic database access is not enough. Stable metadata, bounded questions, clarifying prompts, reusable queries and permissions make agentic output dependable.</span></div></div>
-          <div class="gem"><div class="gem-icon">G</div><div><strong>GTM lesson</strong><span>Sell one task through a hands-on design partner and warm champion. Cold “AI” outreach is easily filtered; risk-averse enterprises want traction.</span></div></div>
-        </div>
+        <table class="comparison-table">
+          <thead><tr><th>Evidence</th><th>What exists now</th><th>Strategic implication</th></tr></thead>
+          <tbody>
+            <tr><td>FP&amp;A suites</td><td>Abacum markets grounded, governed finance intelligence; Datarails agents use authorised data, clarifying flows, confirmation and Excel/PPT/PDF outputs. <a class="cite" href="https://www.abacum.ai/product/intelligence" target="_blank" rel="noreferrer">Abacum ↗</a> <a class="cite" href="https://support.datarails.com/hc/en-us/articles/25257415989916-Introduction-to-Datarails-AI-Agents" target="_blank" rel="noreferrer">Datarails ↗</a></td><td>Do not claim the control pattern as the moat.</td></tr>
+            <tr><td>Semantic / MCP layer</td><td>dbt’s MCP server exposes project context, semantic SQL and lineage; WrenAI provides an Apache-licensed governed context layer and text-to-SQL. <a class="cite" href="https://github.com/dbt-labs/dbt-mcp" target="_blank" rel="noreferrer">dbt-mcp ↗</a> <a class="cite" href="https://github.com/Canner/WrenAI" target="_blank" rel="noreferrer">WrenAI ↗</a></td><td>Reuse or integrate; do not build generic context infrastructure.</td></tr>
+            <tr><td>Investment research</td><td>OpenBB already provides an open data platform for analysts, quants and AI agents. <a class="cite" href="https://github.com/OpenBB-finance/OpenBB" target="_blank" rel="noreferrer">OpenBB ↗</a></td><td>Deprioritise broad investment analysis as the first wedge.</td></tr>
+            <tr class="cm-row"><td>ChartMindAI test</td><td>One export-first monthly brief, service-assisted onboarding, editable output and an evidence manifest—without a platform migration.</td><td>Compete on speed to first proof and one exact job. Treat this as a hypothesis.</td></tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <section class="slide" id="moat" data-index="08" data-title="Moat">
-      <div class="mini-nav"><span>Questions 3 + 4</span><span>Right to win + moat</span></div>
+    <section class="slide" id="moat" data-index="08" data-title="Right to learn">
+      <div class="mini-nav"><span>Defensibility</span><span>Right to learn</span></div>
       <div class="slide-inner">
-        <p class="kicker">Defensibility</p>
-        <h2>The moat is <span class="accent">approved workflow memory</span>—not skills alone.</h2>
-        <p class="lead">Models, MCP and prompt skills are inputs. Defensibility starts when cross-customer questions, semantic contracts, edge cases, evaluations and approved histories compound faster than a team can maintain them itself.</p>
+        <p class="kicker">No moat yet</p>
+        <h2>Earn a <span class="accent">right to learn</span> before claiming defensibility.</h2>
+        <p class="lead">Models, MCP, charting, semantic layers and audit logs are increasingly available from platforms and open source. Customer approval history is also private and not automatically portable. The first asset is a repeatable workflow and its evaluation set—not “workflow memory.”</p>
 
         <div class="moat-layout">
-          <div class="flywheel" role="img" aria-label="Moat flywheel from design partners to workflow packs and policies, edge cases and evaluations, faster approval, and back to more design partners">
+          <div class="flywheel" role="img" aria-label="Learning loop from matched design partners to a golden workflow, edge-case evaluations, faster delivery and another matched partner">
             <svg viewBox="0 0 620 500">
               <defs><marker id="wheelHead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="wheel-arrow" d="M0 0 10 5 0 10Z"/></marker></defs>
               <path class="wheel-line" marker-end="url(#wheelHead)" d="M310 72C450 72 540 156 543 244"/>
@@ -1854,59 +2000,69 @@
               <path class="wheel-line" marker-end="url(#wheelHead)" d="M294 438C174 436 83 366 78 267"/>
               <path class="wheel-line" marker-end="url(#wheelHead)" d="M78 238C96 130 185 74 287 72"/>
 
-              <g transform="translate(310 70)"><rect class="wheel-node" x="-82" y="-37" width="164" height="74" rx="18"/><text class="wheel-text" y="-5">Design partners</text><text class="wheel-sub" y="15">real artifacts + cycles</text></g>
-              <g transform="translate(536 250)"><rect class="wheel-node" x="-79" y="-42" width="158" height="84" rx="18"/><text class="wheel-text" y="-11">Questions + policy</text><text class="wheel-sub" y="9">semantics · access</text><text class="wheel-sub" y="25">checks · approvals</text></g>
-              <g transform="translate(310 438)"><rect class="wheel-node" x="-88" y="-40" width="176" height="80" rx="18"/><text class="wheel-text" y="-10">Edge cases + evals</text><text class="wheel-sub" y="11">golden packs · regression</text><text class="wheel-sub" y="27">tests</text></g>
-              <g transform="translate(82 250)"><rect class="wheel-node" x="-76" y="-42" width="152" height="84" rx="18"/><text class="wheel-text" y="-11">Faster approval</text><text class="wheel-sub" y="9">onboarding + trace</text><text class="wheel-sub" y="25">signed-off history</text></g>
-              <g transform="translate(310 250)"><circle class="wheel-core" r="83"/><text class="wheel-core-text" y="-9">APPROVED</text><text class="wheel-core-text" y="13">WORKFLOW</text><text class="wheel-core-text" y="35">MEMORY</text></g>
+              <g transform="translate(310 70)"><rect class="wheel-node" x="-82" y="-37" width="164" height="74" rx="18"/><text class="wheel-text" y="-5">Matched partner</text><text class="wheel-sub" y="15">artifact + baseline</text></g>
+              <g transform="translate(536 250)"><rect class="wheel-node" x="-79" y="-42" width="158" height="84" rx="18"/><text class="wheel-text" y="-11">Golden workflow</text><text class="wheel-sub" y="9">definitions · checks</text><text class="wheel-sub" y="25">editable output</text></g>
+              <g transform="translate(310 438)"><rect class="wheel-node" x="-88" y="-40" width="176" height="80" rx="18"/><text class="wheel-text" y="-10">Edge-case evals</text><text class="wheel-sub" y="11">exceptions · regressions</text><text class="wheel-sub" y="27">review evidence</text></g>
+              <g transform="translate(82 250)"><rect class="wheel-node" x="-76" y="-42" width="152" height="84" rx="18"/><text class="wheel-text" y="-11">Faster delivery</text><text class="wheel-sub" y="9">less bespoke work</text><text class="wheel-sub" y="25">clearer sales proof</text></g>
+              <g transform="translate(310 250)"><circle class="wheel-core" r="83"/><text class="wheel-core-text" y="-9">REPEATABLE</text><text class="wheel-core-text" y="13">CUSTOMER</text><text class="wheel-core-text" y="35">OUTCOME</text></g>
             </svg>
           </div>
 
           <div class="moat-lists">
             <div class="moat-list">
-              <h3>Compounds with use</h3>
+              <h3>Evidence to earn in 90 days</h3>
               <ul>
-                <li>Versioned question patterns, metric definitions and source mappings</li>
-                <li>Saved workflows, signed-off reports and explanations</li>
-                <li>Reusable exceptions, reconciliations and golden evals</li>
-                <li>Feedback and approval history that improve adoption</li>
+                <li>Two matched customers complete two live cycles</li>
+                <li>One reusable schema covers most of both implementations</li>
+                <li>A golden test pack catches material regressions</li>
+                <li>Customers renew because the outcome—not the founders—is valuable</li>
               </ul>
             </div>
             <div class="moat-list table-stakes">
-              <h3>Necessary, not a moat</h3>
+              <h3>Channel and table stakes</h3>
               <ul>
-                <li>MCP, charts, PPTX, prompt templates and generic skills</li>
-                <li>Azure hosting, encryption, SSO and billing</li>
-                <li>A generic semantic layer or audit log alone</li>
+                <li>MCP is supported by ChatGPT apps and Microsoft Copilot Studio</li>
+                <li>Charts, PPTX, prompt skills, hosting, SSO and audit logs</li>
+                <li>Generic semantic or context layers available via open source</li>
               </ul>
+              <p><a class="cite" href="https://developers.openai.com/" target="_blank" rel="noreferrer">OpenAI Apps SDK ↗</a> <a class="cite" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp" target="_blank" rel="noreferrer">Microsoft MCP ↗</a></p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="slide" id="buyer" data-index="09" data-title="Buyer map">
-      <div class="mini-nav"><span>Question 6</span><span>Use · approve · pay</span></div>
+    <section class="slide" id="buyer" data-index="09" data-title="Team and capacity">
+      <div class="mini-nav"><span>Execution reality</span><span>60–70 team-hours / week</span></div>
       <div class="slide-inner">
-        <p class="kicker">Buying committee</p>
-        <h2>Four roles. <span class="accent">Four different reasons to say yes.</span></h2>
-        <p class="lead">The sale works when the operator saves time, the owner gains confidence, the buyer sees payback and security accepts a bounded data path.</p>
+        <p class="kicker">Plan for the team that exists</p>
+        <h2>Enough capacity for <span class="accent">two proofs</span>—not a platform.</h2>
+        <p class="lead">The supplied constraint is six or seven part-time people at roughly ten hours each per week: about 30 engineering hours, 30 commercial hours and at most 10 flexible hours. Over 90 days, focus must beat breadth.</p>
 
-        <div class="buyer-map">
-          <article class="buyer-card" style="--role-color:#86e0cf"><span class="buyer-role">Uses</span><h3>FP&amp;A / Finance / RevOps</h3><p>Runs the monthly cycle, resolves exceptions and drafts the narrative.</p><p class="why"><strong>Chooses us for:</strong><br>less reconciliation, editable output, quick traceability.</p></article>
-          <article class="buyer-card" style="--role-color:#b5e66f"><span class="buyer-role">Approves</span><h3>Head of FP&amp;A / VP Finance</h3><p>Signs off definitions, materiality and the final reporting pack.</p><p class="why"><strong>Chooses us for:</strong><br>consistent metrics and one fewer review loop.</p></article>
-          <article class="buyer-card" style="--role-color:#ffc866"><span class="buyer-role">Pays</span><h3>CFO</h3><p>Owns board confidence, finance productivity and tool economics.</p><p class="why"><strong>Chooses us for:</strong><br>payback in months, not a multi-quarter transformation.</p></article>
-          <article class="buyer-card" style="--role-color:#79a9ff"><span class="buyer-role">Clears</span><h3>Data / IT / Security</h3><p>Approves data location, model access, logs, permissions and the deployment/upgrade boundary.</p><p class="why"><strong>Chooses us for:</strong><br>export-first scope, customer-controlled credentials, explicit lineage and no hidden writes.</p></article>
+        <div class="capacity-grid">
+          <div class="capacity-bars" aria-label="Weekly capacity allocation">
+            <div class="capacity-row"><span>Engineering</span><div class="capacity-track"><i style="--cap:43%;--cap-color:#79a9ff"></i></div><strong>~30 h/wk</strong></div>
+            <div class="capacity-row"><span>Commercial</span><div class="capacity-track"><i style="--cap:43%;--cap-color:#b5e66f"></i></div><strong>~30 h/wk</strong></div>
+            <div class="capacity-row"><span>Flex / QA</span><div class="capacity-track"><i style="--cap:14%;--cap-color:#ffc866"></i></div><strong>0–10 h/wk</strong></div>
+            <div class="verdict"><strong>CAP</strong><span>Two service-assisted pilots, one workflow, one deployment pattern and a small evaluation suite.</span></div>
+          </div>
+
+          <div class="fit-list">
+            <article class="fit-item" style="--fit:#86e0cf"><strong>Supported capability</strong><span>Public profile evidence indicates finance/investing knowledge and full-stack/cloud engineering; the codebase demonstrates MCP, charting and deployment work. <a class="cite" href="https://www.linkedin.com/in/gkshopov/" target="_blank" rel="noreferrer">finance ↗</a> <a class="cite" href="https://www.linkedin.com/in/alexandermarinov/" target="_blank" rel="noreferrer">investing ↗</a> <a class="cite" href="https://www.linkedin.com/in/valentin-baltadzhiev-58679a3b/" target="_blank" rel="noreferrer">engineering ↗</a></span></article>
+            <article class="fit-item" style="--fit:#ffc866"><strong>Incomplete evidence</strong><span>Four supplied LinkedIn profiles were not publicly readable; role depth, current availability and founder-led sales ownership are not fully verified.</span></article>
+            <article class="fit-item" style="--fit:#ff826f"><strong>Capacity mismatch to avoid</strong><span>Enterprise procurement, many live connectors, customer-specific hosting, forecasting and continuous bespoke support would outrun the team.</span></article>
+            <article class="fit-item" style="--fit:#79a9ff"><strong>Best use of current strengths</strong><span>Manual-first artifact work, a thin evidence product, warm finance access and code-native iteration.</span></article>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="slide" id="partner" data-index="10" data-title="Design partner">
-      <div class="mini-nav"><span>Question 7</span><span>Validate without consulting</span></div>
+      <div class="mini-nav"><span>Pilot design</span><span>Learn without overfitting</span></div>
       <div class="slide-inner">
-        <p class="kicker">Paid design partnership</p>
-        <h2>Learn from one workflow—<span class="coral">without building one customer’s company.</span></h2>
-        <p class="lead">An 8–10 week, service-assisted engagement covering two monthly cycles—with an operator champion, hands-on onboarding and a standard product boundary.</p>
+        <p class="kicker">Service-assisted design partnership</p>
+        <h2>Learn manually—<span class="coral">without hiding a services business.</span></h2>
+        <p class="lead">Use prototypes and manual work to learn quickly, but separate reusable product work from customer-specific effort. Design partners should be representative, urgent and capable. <a class="cite" href="https://a16z.com/a-framework-for-finding-a-design-partner/" target="_blank" rel="noreferrer">a16z design-partner framework ↗</a></p>
 
         <div class="partner-layout">
           <div>
@@ -1918,18 +2074,18 @@
               <div class="week"><div class="week-dot">6–8</div><strong>Harden</strong><span>Rules + evals</span></div>
               <div class="week"><div class="week-dot">9–10</div><strong>Cycle 2</strong><span>Measure + decide</span></div>
             </div>
-            <div class="partner-price"><strong>£5k–£10k?</strong><span>pricing hypothesis to test; fixed fee creditable against subscription</span></div>
+            <div class="partner-price"><strong>Paid signal</strong><span>Ask for a real invoice, deposit or signed conversion trigger before custom build. Discover price from the customer’s value model; do not anchor on an unsupported range.</span></div>
           </div>
 
           <aside class="guardrails">
             <h3>Product guardrails</h3>
             <ul>
-              <li class="positive">One workflow with 10–20 recurring questions and explicit customer configuration</li>
+              <li class="positive">One brief with a finite KPI and commentary contract</li>
               <li class="positive">Named operator champion + hands-on working session</li>
-              <li class="positive">Accept early manual work; log every bespoke element</li>
+              <li class="positive">Accept manual work; time and label every bespoke element</li>
               <li>No custom connectors during the pilot</li>
               <li>No autonomous publishing or source-system writes</li>
-              <li>Promote to core only if useful to 3 of the next 5 customers</li>
+              <li>Do not promise forecasting, live integrations or autonomous actions</li>
             </ul>
           </aside>
         </div>
@@ -1937,25 +2093,25 @@
     </section>
 
     <section class="slide" id="evidence-gates" data-index="11" data-title="Evidence gates">
-      <div class="mini-nav"><span>Question 8</span><span>Decide with evidence</span></div>
+      <div class="mini-nav"><span>Decision rules</span><span>Management thresholds · not market facts</span></div>
       <div class="slide-inner">
-        <p class="kicker">8–10 week decision gate</p>
+        <p class="kicker">90-day decision gate</p>
         <h2>Do not debate the direction forever. <span class="accent">Make it earn priority.</span></h2>
-        <p class="lead">Prioritise only if the same painful job repeats, customers share real artifacts, measurable value survives two live cycles and one maintainable security pattern clears review.</p>
+        <p class="lead">These thresholds are explicit management hypotheses. They prevent narrative momentum from substituting for demand, access, quality, repeatability and willingness to continue.</p>
 
         <div class="gates" aria-label="Six evidence gates for prioritising the strategy">
-          <div class="gate" style="--gate-color:#86e0cf"><div class="gate-value">5/8</div><div><div class="gate-label">repeat one workflow and a finite question set</div><span class="gate-index">PAIN</span></div></div>
-          <div class="gate" style="--gate-color:#79a9ff"><div class="gate-value">3</div><div><div class="gate-label">share artifacts plus the required data definitions</div><span class="gate-index">ACCESS</span></div></div>
-          <div class="gate" style="--gate-color:#b5e66f"><div class="gate-value">2</div><div><div class="gate-label">pay and nominate an operator champion</div><span class="gate-index">COMMITMENT</span></div></div>
-          <div class="gate" style="--gate-color:#ffc866"><div class="gate-value">2</div><div><div class="gate-label">live monthly cycles completed</div><span class="gate-index">REPEAT</span></div></div>
-          <div class="gate" style="--gate-color:#36c4ae"><div class="gate-value">≥50%</div><div><div class="gate-label">time saved with zero material unexplained errors</div><span class="gate-index">ROI</span></div></div>
-          <div class="gate" style="--gate-color:#ff826f"><div class="gate-value">1</div><div><div class="gate-label">maintainable data + inference pattern clears both partners</div><span class="gate-index">SECURITY</span></div></div>
+          <div class="gate" style="--gate-color:#86e0cf"><div class="gate-value">5/8</div><div><div class="gate-label">matched operators repeat the same costly job</div><span class="gate-index">PAIN</span></div></div>
+          <div class="gate" style="--gate-color:#79a9ff"><div class="gate-value">3</div><div><div class="gate-label">complete artifact sets with definitions are shared</div><span class="gate-index">ACCESS</span></div></div>
+          <div class="gate" style="--gate-color:#b5e66f"><div class="gate-value">2</div><div><div class="gate-label">commercial commitments before custom build</div><span class="gate-index">PULL</span></div></div>
+          <div class="gate" style="--gate-color:#ffc866"><div class="gate-value">2×2</div><div><div class="gate-label">customers each complete two live cycles</div><span class="gate-index">REPEAT</span></div></div>
+          <div class="gate" style="--gate-color:#36c4ae"><div class="gate-value">0</div><div><div class="gate-label">unexplained material errors at sign-off</div><span class="gate-index">QUALITY</span></div></div>
+          <div class="gate" style="--gate-color:#ff826f"><div class="gate-value">1+</div><div><div class="gate-label">customer asks to continue at an agreed price</div><span class="gate-index">VALUE</span></div></div>
         </div>
 
         <div class="decision-rules">
-          <div class="decision-rule" style="--rule:#b5e66f"><strong>PRIORITISE</strong>All critical gates pass and discrepancies are explainable.</div>
-          <div class="decision-rule" style="--rule:#ffc866"><strong>REVISE</strong>Pain repeats but buyer, segment or recurring workflow shifts.</div>
-          <div class="decision-rule" style="--rule:#ff826f"><strong>DEPRIORITISE</strong>No artifacts, no paid commitment, low time cost or heavy bespoke integration.</div>
+          <div class="decision-rule" style="--rule:#b5e66f"><strong>COMMIT MORE</strong>All critical gates pass and most delivery work is reusable.</div>
+          <div class="decision-rule" style="--rule:#ffc866"><strong>REVISE ONCE</strong>Pain repeats, but buyer, pack or segment shifts with fresh evidence.</div>
+          <div class="decision-rule" style="--rule:#ff826f"><strong>STOP</strong>No artifacts, no commercial signal, weak value or bespoke integration dominates.</div>
         </div>
       </div>
     </section>
@@ -1963,89 +2119,142 @@
     <section class="slide" id="risks" data-index="12" data-title="Risks">
       <div class="mini-nav"><span>Critical assumptions</span><span>What could break</span></div>
       <div class="slide-inner">
-        <p class="kicker">Key risks</p>
-        <h2>The direction is clearer. <span class="coral">The specific wedge is not.</span></h2>
-        <p class="lead">Treat these as the four fastest ways to falsify or redirect the thesis.</p>
+        <p class="kicker">Highest-risk assumptions</p>
+        <h2>Test what can kill the strategy <span class="coral">before polishing it.</span></h2>
+        <p class="lead">These are unresolved. Each has a concrete early test and a stop condition.</p>
         <div class="risks-grid">
-          <article class="risk" style="--risk:#ff826f"><span class="risk-num">01</span><h3>The vertical wedge is unproven</h3><p>Generic AI claims are ignored and large enterprises often buy late. The ARR pack still lacks matched demand evidence.</p><small>Test: recruit through warm, workflow-specific champions.</small></article>
-          <article class="risk" style="--risk:#ffc866"><span class="risk-num">02</span><h3>Arbitrary-query trap</h3><p>Unrestricted language over ambiguous data creates long clarification and validation work.</p><small>Test: begin with 10–20 recurring questions, then expand from usage.</small></article>
-          <article class="risk" style="--risk:#79a9ff"><span class="risk-num">03</span><h3>Metadata becomes services</h3><p>Weak definitions, unstable schemas and customer rules can pull the team into bespoke cleanup.</p><small>Test: score metadata readiness and reusable core separately.</small></article>
-          <article class="risk" style="--risk:#86e0cf"><span class="risk-num">04</span><h3>Security fractures delivery</h3><p>Per-customer hosting, credentials and upgrades can erase SaaS economics.</p><small>Test: export-first, then one customer-controlled deployment pattern.</small></article>
+          <article class="risk" style="--risk:#ff826f"><span class="risk-num">01 · DEMAND</span><h3>The brief is not urgent enough</h3><p>Monthly reporting may be painful but tolerable, especially when spreadsheets already work.</p><small>Kill if matched users will not share artifacts or make a commercial commitment.</small></article>
+          <article class="risk" style="--risk:#ffc866"><span class="risk-num">02 · SERVICES</span><h3>Every pack is different</h3><p>Definitions, source shapes and commentary may require too much expert tailoring.</p><small>Kill if customer-specific work remains the majority after cycle two.</small></article>
+          <article class="risk" style="--risk:#79a9ff"><span class="risk-num">03 · TRUST</span><h3>Review cost erases the gain</h3><p>Current model reliability makes unchecked finance automation unsafe.</p><small>Kill if review time or material errors do not improve versus baseline.</small></article>
+          <article class="risk" style="--risk:#86e0cf"><span class="risk-num">04 · GOVERNANCE</span><h3>Buyer controls exceed capacity</h3><p>Routine internal reporting is not automatically an EU AI Act high-risk use, but customer, data and role can change the analysis. <a class="cite" href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noreferrer">EC AI Act ↗</a></p><small>Kill or postpone if a pilot requires bespoke hosting, deep integration or long procurement.</small></article>
         </div>
       </div>
     </section>
 
     <section class="slide" id="plan" data-index="13" data-title="Action plan">
-      <div class="mini-nav"><span>Recommended next move</span><span>10 weeks</span></div>
+      <div class="mini-nav"><span>Recommended next move</span><span>90 days · capacity-capped</span></div>
       <div class="slide-inner">
-        <p class="kicker">From thesis to evidence</p>
-        <h2>Run a <span class="accent">workflow bake-off</span> before a product build-out.</h2>
-        <p class="lead">Preserve the MCP and rendering substrate. Compare candidate jobs on pain, recurring questions, metadata readiness, champion access, security friction and paid commitment.</p>
+        <p class="kicker">The 90-day execution plan</p>
+        <h2>Produce two credible wins—<span class="accent">or stop.</span></h2>
+        <p class="lead">Cap work at roughly 30 engineering and 30 commercial hours per week. Preserve the existing MCP and rendering substrate; spend new effort only on evidence required for the next gate.</p>
 
         <div class="roadmap">
-          <article class="roadmap-step" style="--step-color:#86e0cf"><span class="number">WEEKS 1–2</span><h3>Rank three jobs</h3><p>For <strong>ARR/NRR reporting, monthly ledger control and investment analysis</strong>, capture artifacts, 10–20 repeat questions and a willing champion.</p></article>
-          <article class="roadmap-step" style="--step-color:#79a9ff"><span class="number">WEEKS 2–4</span><h3>Build the thin path</h3><p>Encode semantic definitions, source mappings, clarifications, permissions, checks and one reviewed output. Workshop it early.</p></article>
-          <article class="roadmap-step" style="--step-color:#ffc866"><span class="number">WEEKS 4–9</span><h3>Run, learn, secure</h3><p>Shadow live work; save reusable queries; measure time, errors, adoption and review loops. Test credentials and audit requirements.</p></article>
-          <article class="roadmap-step" style="--step-color:#b5e66f"><span class="number">WEEK 10</span><h3>Make the call</h3><p>Prioritise, revise or stop against the evidence gates. A paid, repeatable job wins—not the strongest internal narrative.</p></article>
+          <article class="roadmap-step" style="--step-color:#86e0cf"><span class="number">DAYS 1–15</span><h3>Recruit and baseline</h3><p><strong>Commercial:</strong> 12–15 matched conversations and five artifact walkthroughs. <strong>Engineering:</strong> demo only; no new platform work.</p></article>
+          <article class="roadmap-step" style="--step-color:#79a9ff"><span class="number">DAYS 16–30</span><h3>Select and contract</h3><p>Choose the monthly brief only if pain repeats. Secure three complete artifact sets and two commercial commitments. Define one golden test pack.</p></article>
+          <article class="roadmap-step" style="--step-color:#ffc866"><span class="number">DAYS 31–60</span><h3>Deliver cycle one</h3><p>Run two manual-first pilots with no more than three exports. Measure total preparation, review loops, errors, trace time and bespoke hours.</p></article>
+          <article class="roadmap-step" style="--step-color:#b5e66f"><span class="number">DAYS 61–90</span><h3>Repeat and decide</h3><p>Run cycle two, test reuse across customers and ask for continued paid use. Commit more, revise once or stop against the gates.</p></article>
         </div>
 
-        <div class="final-call"><p><strong>Recommended position to validate:</strong> “ChartMindAI turns recurring finance work into a constrained, governed workflow—with the organisation’s semantics built in, every conclusion traceable and every output reviewable.”</p><span class="status">Validate before vertical commitment</span></div>
+        <div class="final-call"><p><strong>Position to validate:</strong> “ChartMindAI turns your existing finance exports into a reviewed monthly performance brief—with reconciled KPIs, editable commentary and evidence behind every material number.”</p><span class="status">No broader build until proof</span></div>
       </div>
     </section>
 
-    <section class="slide" id="sources" data-index="14" data-title="Sources">
-      <div class="mini-nav"><span>Source trail</span><span>Research + code</span></div>
+    <section class="slide" id="sources" data-index="14" data-title="Evidence method">
+      <div class="mini-nav"><span>Evidence method</span><span>Facts · inferences · unknowns</span></div>
       <div class="slide-inner">
-        <p class="kicker">Evidence base</p>
-        <h2>What this recommendation is <span class="accent">grounded in</span>.</h2>
+        <p class="kicker">How to read the recommendation</p>
+        <h2>Separate what is known from <span class="accent">what must be tested.</span></h2>
 
         <div class="sources-layout">
-          <div>
-            <div class="source-block">
-              <h3>Primary local evidence</h3>
-              <div class="source-list-links">
-                <span>Five prior finance, SaaS operations and product-strategy discussions <small>· private discovery</small></span>
-                <span>Corporate-finance power-user discussion (Bulgarian) <small>· private discovery</small></span>
-                <span>Enterprise security/product-strategy discussion (Bulgarian) <small>· private discovery</small></span>
-                <span>Enterprise agentic data-platform strategy discussion <small>· private transcript · 20 July 2026</small></span>
-                <span>Vertical AI go-to-market discussion <small>· private transcript · 20 July 2026</small></span>
-                <span>ChartMindAI PMF interview trends report <small>· Documents/ChartMindAI</small></span>
-              </div>
-            </div>
-
-            <div class="source-block">
-              <h3>Code-grounded reality</h3>
-              <div class="source-list-links">
-                <span>MCP tools and widget <small>· mcp-server/chart_server/main.py</small></span>
-                <span>Chart generation context <small>· functions/chart_config_generator</small></span>
-                <span>Widget chart support <small>· mcp-server/src/chart/index.jsx</small></span>
-                <span>Auth, subscription and quota scaffolding <small>· mcp-server/chart_server/subscription.py</small></span>
-              </div>
-            </div>
+          <div class="method-note">
+            <h3>Confidence legend</h3>
+            <p><strong>Observed</strong> is directly supported by research, a public product, the codebase or a private interview. It does not imply causality or market fit.</p>
+            <div class="signal" style="--sig:#86e0cf"><i></i><span><strong>Established evidence:</strong> FP&amp;A data preparation is costly; spreadsheets remain pervasive; current agents need control and review; the competitive baseline includes governed finance workflows.</span></div>
+            <div class="signal" style="--sig:#ffc866"><i></i><span><strong>Reasonable inference:</strong> an export-first brief is the fastest low-risk way for this team to test value without platform replacement or enterprise-scale engineering.</span></div>
+            <div class="signal" style="--sig:#ff826f"><i></i><span><strong>Unresolved uncertainty:</strong> exact ICP, urgency, price, ROI, retention, data readiness, repeatability and sales ownership.</span></div>
           </div>
 
           <div>
             <div class="source-block">
-              <h3>Independent market research</h3>
+              <h3>Evidence hierarchy used</h3>
               <div class="source-list-links">
-                <span><a href="https://help.openai.com/en/articles/8437071-data-analysis-with-chatgp" target="_blank" rel="noreferrer">OpenAI ↗</a> · <a href="https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-create-reports" target="_blank" rel="noreferrer">Microsoft ↗</a> <small>· platform baselines</small></span>
-                <span><a href="https://motley.ai/" target="_blank" rel="noreferrer">Motley ↗</a> · <a href="https://motley.ai/hosted-slayer/" target="_blank" rel="noreferrer">SLayer ↗</a> · <a href="https://cube.dev/product/ai-context-layer" target="_blank" rel="noreferrer">Cube ↗</a> <small>· semantic infrastructure</small></span>
-                <span><a href="https://trusera.dev/" target="_blank" rel="noreferrer">Trusera ↗</a> <small>· discovery, policy and agentic service mesh</small></span>
-                <span><a href="https://www.datarails.com/v2/" target="_blank" rel="noreferrer">Datarails ↗</a> · <a href="https://www.abacum.ai/" target="_blank" rel="noreferrer">Abacum ↗</a> · <a href="https://www.getaleph.com/platform/overview" target="_blank" rel="noreferrer">Aleph ↗</a> <small>· FP&amp;A platforms</small></span>
-                <span><a href="https://airc.nist.gov/airmf-resources/airmf/5-sec-core/" target="_blank" rel="noreferrer">NIST AI RMF ↗</a> · <a href="https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX%3A32024R1689" target="_blank" rel="noreferrer">EU AI Act ↗</a> <small>· governance</small></span>
+                <span>1. Official research and standards <small>· AFP, EY / FP&amp;A Trends, NIST, European Commission</small></span>
+                <span>2. Primary technical evidence <small>· current papers, specifications and repositories</small></span>
+                <span>3. Vendor product documentation <small>· used for capability claims, not independent outcomes</small></span>
+                <span>4. Private discovery <small>· anonymised and treated as directional, not representative</small></span>
+                <span>5. Team profiles and codebase <small>· partial capability evidence only</small></span>
               </div>
             </div>
-
-            <div class="method-note">
-              <h3>Confidence legend</h3>
-              <p><strong>Observed</strong> means visible in source material or the codebase. <strong>Inferred</strong> is the strategic synthesis. <strong>Hypothesis</strong> is deliberately framed as a threshold to test.</p>
-              <div class="signal" style="--sig:#86e0cf"><i></i><span><strong>Observed:</strong> one power user cut a finance workflow from roughly a week to 1.5 days; enterprise practitioners stressed constrained questions, metadata, permissions, adoption and deployment control.</span></div>
-              <div class="signal" style="--sig:#ffc866"><i></i><span><strong>Inferred:</strong> a vertical semantic workflow harness is more defensible—and more sellable—than generic charting, MCP infrastructure or prompt templates alone.</span></div>
-              <div class="signal" style="--sig:#ff826f"><i></i><span><strong>Hypothesis:</strong> the winning workflow, ICP, pricing, repeatable ROI and maintainable security architecture remain unproven.</span></div>
+            <div class="source-block">
+              <h3>Anonymous discovery · directional</h3>
+              <div class="source-list-links">
+                <span>Enterprise data practitioners: templates, metadata, permissions and clarifying questions made agents more dependable.</span>
+                <span>Finance power user: reusable AI workflows accelerate preparation; expert judgement still governs the final output.</span>
+                <span>Security strategist: data location, inference control, auditability and upgrade ownership can decide acceptability.</span>
+                <span>Investor / operator: lead with one vertical task and a warm champion; large-enterprise entry needs prior evidence.</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="footer-mark">ChartMindAI strategy review · July 2026</div>
+        <div class="footer-mark">All visuals are original HTML/CSS/SVG; no external media assets or third-party logos are embedded.</div>
+      </div>
+    </section>
+
+    <section class="slide" id="source-register" data-index="15" data-title="Source register">
+      <div class="mini-nav"><span>Direct source register</span><span>Accessed 20 July 2026</span></div>
+      <div class="slide-inner">
+        <p class="kicker">Research appendix</p>
+        <h2>Direct links to the <span class="accent">material evidence.</span></h2>
+        <div class="source-register">
+          <div class="source-block">
+            <h3>Problem + governance</h3>
+            <div class="source-list-links">
+              <a href="https://www.financialprofessionals.org/training-resources/resources/survey-research-economic-data/Details/FPABenchmarking" target="_blank" rel="noreferrer">AFP 2025 FP&amp;A Benchmarking ↗</a>
+              <a href="https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/services/consulting/documents/ey-gl-fpa-trends-research-2026-ey-fpa-operating-model-06-2026.pdf" target="_blank" rel="noreferrer">EY / FP&amp;A Trends 2026 ↗</a>
+              <a href="https://airc.nist.gov/airmf-resources/airmf/5-sec-core/" target="_blank" rel="noreferrer">NIST AI RMF Core ↗</a>
+              <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noreferrer">European Commission AI Act ↗</a>
+            </div>
+          </div>
+          <div class="source-block">
+            <h3>Reliability research</h3>
+            <div class="source-list-links">
+              <a href="https://arxiv.org/abs/2603.07316" target="_blank" rel="noreferrer">FinSheet-Bench ↗ <small>· preprint</small></a>
+              <a href="https://arxiv.org/abs/2605.22664" target="_blank" rel="noreferrer">WorkstreamBench ↗ <small>· preprint</small></a>
+              <a href="https://arxiv.org/abs/2606.03363" target="_blank" rel="noreferrer">EntSQL ↗ <small>· preprint</small></a>
+              <a href="https://github.com/RUCKBReasoning/SpreadsheetBench" target="_blank" rel="noreferrer">SpreadsheetBench ↗ <small>· NeurIPS 2024</small></a>
+            </div>
+          </div>
+          <div class="source-block">
+            <h3>Products + open source</h3>
+            <div class="source-list-links">
+              <a href="https://www.abacum.ai/product/intelligence" target="_blank" rel="noreferrer">Abacum Intelligence ↗</a>
+              <a href="https://support.datarails.com/hc/en-us/articles/25257415989916-Introduction-to-Datarails-AI-Agents" target="_blank" rel="noreferrer">Datarails AI Agents ↗</a>
+              <a href="https://www.datarails.com/v2/" target="_blank" rel="noreferrer">Datarails FinanceOS ↗</a>
+              <a href="https://github.com/dbt-labs/dbt-mcp" target="_blank" rel="noreferrer">dbt MCP ↗</a>
+              <a href="https://github.com/Canner/WrenAI" target="_blank" rel="noreferrer">WrenAI ↗</a>
+              <a href="https://github.com/OpenBB-finance/OpenBB" target="_blank" rel="noreferrer">OpenBB ↗</a>
+            </div>
+          </div>
+          <div class="source-block">
+            <h3>MCP + early GTM</h3>
+            <div class="source-list-links">
+              <a href="https://developers.openai.com/" target="_blank" rel="noreferrer">OpenAI developers / Apps SDK ↗</a>
+              <a href="https://github.com/openai/openai-apps-sdk-examples" target="_blank" rel="noreferrer">OpenAI Apps SDK examples ↗</a>
+              <a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp" target="_blank" rel="noreferrer">Microsoft Copilot Studio MCP ↗</a>
+              <a href="https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization" target="_blank" rel="noreferrer">MCP authorization specification ↗</a>
+              <a href="https://a16z.com/a-framework-for-finding-a-design-partner/" target="_blank" rel="noreferrer">a16z design-partner framework ↗</a>
+            </div>
+          </div>
+          <div class="source-block">
+            <h3>Team evidence · partial</h3>
+            <div class="source-list-links">
+              <a href="https://www.linkedin.com/in/gkshopov/" target="_blank" rel="noreferrer">Public finance / operations profile ↗</a>
+              <a href="https://www.linkedin.com/in/alexandermarinov/" target="_blank" rel="noreferrer">Public investment / portfolio profile ↗</a>
+              <a href="https://www.linkedin.com/in/valentin-baltadzhiev-58679a3b/" target="_blank" rel="noreferrer">Public full-stack / cloud profile ↗</a>
+              <span>Four supplied profiles were not publicly readable; no conclusions were inferred from missing data.</span>
+            </div>
+          </div>
+          <div class="source-block">
+            <h3>Private + code-grounded</h3>
+            <div class="source-list-links">
+              <span>Anonymised discovery interviews and two 20 July 2026 transcripts <small>· directional evidence</small></span>
+              <span>ChartMindAI interview-trends report <small>· local research synthesis</small></span>
+              <span>MCP tools, widget, chart generation, auth and quota code <small>· execution evidence</small></span>
+              <span>Speaker names and organisations are intentionally omitted.</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-mark">ChartMindAI strategy review · evidence current to 20 July 2026</div>
       </div>
     </section>
   </main>
@@ -2085,6 +2294,7 @@
       setActive(0);
 
       document.addEventListener('keydown', (event) => {
+        if (event.target.closest('a, button, input, select, textarea, [contenteditable="true"]')) return;
         const forward = ['ArrowDown', 'ArrowRight', 'PageDown'];
         const backward = ['ArrowUp', 'ArrowLeft', 'PageUp'];
         if (forward.includes(event.key) || (event.key === ' ' && !event.shiftKey)) {
