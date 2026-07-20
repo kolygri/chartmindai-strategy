@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Complete narrative and speaker context for every slide in the ChartMindAI strategy presentation.">
+  <title>ChartMindAI Strategy — Complete Narrative</title>
+  <style>
+    :root {
+      --ink: #f3f7f4;
+      --soft: #a8b7b2;
+      --faint: #73827d;
+      --night: #07110f;
+      --panel: #10231e;
+      --line: rgba(169, 224, 201, 0.16);
+      --teal: #86e0cf;
+      --lime: #b5e66f;
+      --coral: #ff826f;
+      --max: 820px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; background: var(--night); }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 2%, rgba(54,196,174,0.13), transparent 30rem),
+        linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px),
+        var(--night);
+      background-size: auto, 48px 48px, 48px 48px, auto;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.68;
+    }
+
+    a { color: var(--teal); }
+    a:hover { color: var(--lime); }
+    a:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
+
+    .topbar {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 13px clamp(20px, 5vw, 68px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(7,17,15,0.9);
+      backdrop-filter: blur(18px);
+      font-size: 0.76rem;
+      font-weight: 750;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .topbar a { text-decoration: none; }
+    header, main { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
+
+    header { padding: clamp(70px, 11vw, 130px) 0 65px; }
+    .eyebrow { color: var(--lime); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
+    h1, h2, h3 { line-height: 1.08; letter-spacing: -0.04em; }
+    h1 { max-width: 760px; margin: 18px 0 24px; font-size: clamp(2.8rem, 8vw, 6rem); }
+    h2 { margin: 12px 0 18px; font-size: clamp(2rem, 5vw, 3.6rem); }
+    h3 { margin: 30px 0 9px; font-size: 1.25rem; }
+    p, li { color: var(--soft); }
+    strong { color: var(--ink); }
+
+    .lede { max-width: 720px; font-size: 1.16rem; }
+    .toc {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px 22px;
+      margin: 38px 0 0;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(16,35,30,0.66);
+    }
+
+    .toc a { color: var(--soft); font-size: 0.86rem; text-decoration: none; }
+    .toc a:hover { color: var(--lime); }
+
+    .note {
+      position: relative;
+      padding: clamp(70px, 10vw, 115px) 0;
+      border-top: 1px solid var(--line);
+      scroll-margin-top: 48px;
+    }
+
+    .slide-number { color: var(--teal); font-size: 0.72rem; font-weight: 850; letter-spacing: 0.14em; text-transform: uppercase; }
+    .meaning {
+      margin: 32px 0;
+      padding: 22px 24px;
+      border-left: 3px solid var(--lime);
+      background: linear-gradient(90deg, rgba(181,230,111,0.08), transparent);
+    }
+
+    .meaning p { margin: 0; color: var(--ink); }
+    .transition { margin-top: 34px; color: var(--faint); font-style: italic; }
+    .back-to-slide { display: inline-flex; margin-top: 20px; font-size: 0.76rem; font-weight: 800; letter-spacing: 0.08em; text-decoration: none; text-transform: uppercase; }
+    ul, ol { padding-left: 1.35rem; }
+    li { margin: 7px 0; }
+
+    footer {
+      width: min(calc(100% - 40px), var(--max));
+      margin: 0 auto;
+      padding: 45px 0 70px;
+      border-top: 1px solid var(--line);
+      color: var(--faint);
+      font-size: 0.78rem;
+    }
+
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .topbar { align-items: flex-start; padding-inline: 18px; }
+      .toc { grid-template-columns: 1fr; padding: 18px; }
+      header, main, footer { width: min(calc(100% - 32px), var(--max)); }
+    }
+
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <nav class="topbar" aria-label="Narrative navigation">
+    <span>ChartMindAI / complete narrative</span>
+    <a href="index.html">Return to presentation →</a>
+  </nav>
+
+  <header>
+    <span class="eyebrow">Speaker context · 16 slides</span>
+    <h1>The complete strategy narrative.</h1>
+    <p class="lede">This companion explains what every presentation slide means, the conclusion it supports, what should not be inferred from it, and how it advances the overall argument. It is deliberately separate from the presentation’s natural scroll.</p>
+    <nav class="toc" aria-label="Slide narrative contents">
+      <a href="#opening">00 · Recommendation</a>
+      <a href="#decision">01 · Research verdict</a>
+      <a href="#problem">02 · Pain evidence</a>
+      <a href="#customer">03 · Reliability boundary</a>
+      <a href="#wedge">04 · Product wedge</a>
+      <a href="#proof">05 · Proof surface</a>
+      <a href="#roi">06 · Design-partner filter</a>
+      <a href="#market">07 · Competitive reality</a>
+      <a href="#moat">08 · Right to learn</a>
+      <a href="#buyer">09 · Team and capacity</a>
+      <a href="#partner">10 · Design partner</a>
+      <a href="#evidence-gates">11 · Evidence gates</a>
+      <a href="#risks">12 · Risks</a>
+      <a href="#plan">13 · 90-day plan</a>
+      <a href="#sources">14 · Evidence method</a>
+      <a href="#source-register">15 · Source register</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="note" id="opening">
+      <span class="slide-number">Slide 00 · Recommendation</span>
+      <h2>Sell one monthly performance brief first.</h2>
+      <p>This is the strategy in one sentence. ChartMindAI should not initially sell “AI analytics,” an MCP server, automated chart generation or an FP&amp;A platform. Those descriptions either focus on the technology instead of the customer outcome or place the company in categories where better-funded competitors already operate.</p>
+      <p>The proposed product is a monthly performance brief. A customer supplies a small number of existing exports and the previous approved report. ChartMindAI returns reconciled KPIs, a movement or variance bridge, draft management commentary, editable slides and evidence behind every material number. A finance professional still reviews and approves the result.</p>
+      <p>“Export-first” means the customer does not initially need to approve live integrations, replace a planning platform or provide write access to operational systems. That reduces implementation work, security exposure and procurement friction. “Target a brief in days” is a hypothesis, not an existing performance claim.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> there is one recommended commercial experiment, not a commitment to build a finance platform.</p></div>
+      <p class="transition">Next: separate the parts of the strategy supported by evidence from the parts the previous narrative overstated.</p>
+      <a class="back-to-slide" href="index.html#opening">← Return to slide 00</a>
+    </article>
+
+    <article class="note" id="decision">
+      <span class="slide-number">Slide 01 · Research verdict</span>
+      <h2>The backbone survives. The differentiation does not.</h2>
+      <p>The previous strategy contained a valid core idea: finance automation must be constrained, traceable and reviewed. The mistake was treating that control pattern as a differentiated product or moat.</p>
+      <h3>Supported</h3>
+      <p>The finance problem is real. Data preparation and validation consume substantial capacity, and financial conclusions require definitions, reconciliation, exception handling and human oversight.</p>
+      <h3>Contradicted</h3>
+      <p>“Governed finance workflow” is not a unique position. Current FP&amp;A products already advertise trusted data, company context, clarification, approval, traceability and editable finance outputs. Some now add MCP.</p>
+      <h3>Reasonable inference</h3>
+      <p>An export-first product is the most appropriate entry for this team because it lowers integration, security and implementation demands. This is a strategic synthesis, not an independently verified market fact.</p>
+      <h3>Unresolved</h3>
+      <p>There is no conclusive evidence yet that monthly reporting is the best first workflow, that the proposed segment has sufficient urgency, that two customers will pay, or that delivery can repeat without becoming consulting.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> the finance direction remains credible, but the product, customer and economics are hypotheses that must earn priority.</p></div>
+      <p class="transition">Next: determine whether the underlying customer problem is substantial enough to investigate.</p>
+      <a class="back-to-slide" href="index.html#decision">← Return to slide 01</a>
+    </article>
+
+    <article class="note" id="problem">
+      <span class="slide-number">Slide 02 · Pain evidence</span>
+      <h2>Finance still spends too much time preparing the truth.</h2>
+      <p>The strongest market evidence is not that finance teams want generative AI. It is that they spend too much time finding, cleaning, reconciling and validating the information required for reporting.</p>
+      <p>Independent findings show that 46% of FP&amp;A effort is spent on data collection and validation, while only 31% is spent on insight and action. AFP reports that 61% cite unreliable data, 60% cite inaccessible data and 93% use spreadsheets for reporting daily or weekly.</p>
+      <p>These figures do not prove that customers will buy ChartMindAI. They establish that the workflow problem is widespread and persistent. They also show why ChartMindAI should work with editable spreadsheet and presentation artifacts rather than assume finance teams will abandon them.</p>
+      <p>Sources: <a href="https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/services/consulting/documents/ey-gl-fpa-trends-research-2026-ey-fpa-operating-model-06-2026.pdf">EY / FP&amp;A Trends 2026</a> and <a href="https://www.financialprofessionals.org/training-resources/resources/survey-research-economic-data/Details/FPABenchmarking">AFP 2025</a>.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> enter through a reporting artifact the customer already produces before asking them to replace systems or processes.</p></div>
+      <p class="transition">Next: define what current AI can and cannot safely automate.</p>
+      <a class="back-to-slide" href="index.html#problem">← Return to slide 02</a>
+    </article>
+
+    <article class="note" id="customer">
+      <span class="slide-number">Slide 03 · Reliability boundary</span>
+      <h2>Current agents are useful—not safe to trust alone.</h2>
+      <p>Recent finance and enterprise-data benchmarks indicate that models are capable but still unreliable on realistic professional work. FinSheet-Bench reports 82.4% as the best overall evaluated accuracy—approximately one error for every six questions. WorkstreamBench finds that performance deteriorates on chained calculations and professional spreadsheet tasks. EntSQL shows how difficult it is to combine database schemas with proprietary business knowledge; its best evaluated system reached only 15.9% with long-form enterprise documents.</p>
+      <p>These are recent preprints, so rankings and scores may move. The more durable conclusion is that company-specific financial work remains difficult to automate without controls.</p>
+      <ol>
+        <li><strong>Finite questions:</strong> one defined reporting pack rather than unrestricted analysis.</li>
+        <li><strong>Deterministic calculations:</strong> KPI logic and reconciliations outside free-form generation.</li>
+        <li><strong>Evidence manifest:</strong> source, definition, check and exception for every material figure.</li>
+        <li><strong>Named human owner:</strong> no autonomous publishing or source-system writes.</li>
+      </ol>
+      <p>Research: <a href="https://arxiv.org/abs/2603.07316">FinSheet-Bench</a>, <a href="https://arxiv.org/abs/2605.22664">WorkstreamBench</a> and <a href="https://arxiv.org/abs/2606.03363">EntSQL</a>.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> automate preparation and explanation while preserving deterministic calculations and human accountability.</p></div>
+      <p class="transition">Next: translate that reliability boundary into the smallest product worth testing.</p>
+      <a class="back-to-slide" href="index.html#customer">← Return to slide 03</a>
+    </article>
+
+    <article class="note" id="wedge">
+      <span class="slide-number">Slide 04 · Product wedge</span>
+      <h2>Start with the monthly performance brief.</h2>
+      <p>The proposed wedge is a recurring monthly output for lean B2B software finance teams. It is broader than an ARR bridge alone but much narrower than a complete FP&amp;A suite. ARR and NRR may be included alongside financial and operating KPIs where appropriate.</p>
+      <p>The recruiting filter is behavioural: the company already produces a monthly pack, a named operator owns it, the data can be exported, the customer will share redacted examples and someone with authority will sponsor the experiment.</p>
+      <p>The workflow accepts no more than three current-period exports plus the previous approved pack. Its contract defines the included KPIs, definitions, authoritative sources, exception handling, checks, approvers and final output.</p>
+      <p>Forecasting, generic dashboards, live connectors, customer-hosted variants, source-system writes and unrestricted natural-language analysis remain outside the first 90 days.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> test one concrete reporting outcome with a deliberately small data and product surface.</p></div>
+      <p class="transition">Next: show the standard of evidence the resulting product must provide.</p>
+      <a class="back-to-slide" href="index.html#wedge">← Return to slide 04</a>
+    </article>
+
+    <article class="note" id="proof">
+      <span class="slide-number">Slide 05 · Proof surface</span>
+      <h2>Every number should answer: “Why can I trust this?”</h2>
+      <p>The ARR bridge is an interactive product illustration, not a customer result. Selecting a movement reveals its source, calculation rule, reconciliation check and human owner.</p>
+      <p>The product concept is not merely the chart. The chart provides a simple navigation surface for evidence. Traditional dashboards often stop at showing a number; ChartMindAI should make it easy to understand how the number was produced, what exception affected it and whether it was approved.</p>
+      <p>The goal of tracing a material figure in under 60 seconds is a pilot hypothesis. Trust depends not only on accuracy but also on how quickly a reviewer can verify the result.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> verification should be part of the product experience, not hidden behind an AI answer.</p></div>
+      <p class="transition">Next: identify the first customers most likely to provide decisive evidence.</p>
+      <a class="back-to-slide" href="index.html#proof">← Return to slide 05</a>
+    </article>
+
+    <article class="note" id="roi">
+      <span class="slide-number">Slide 06 · Design-partner filter</span>
+      <h2>Choose the shortest path to real artifacts and a real decision.</h2>
+      <p>This is a recruiting filter, not a validated ideal customer profile. The preferred partner has a finance team of roughly one to five people, a recurring monthly reporting process, no more than three required exports, one operator who owns the workflow and a finance leader able to approve and fund the experiment.</p>
+      <p>Warm access matters because the team has limited commercial capacity. A trusted introduction is more likely than broad “AI analytics” outreach to produce real artifacts and candid feedback.</p>
+      <p>The qualification sequence is pain, artifact access, decision authority and commercial commitment. Failure at any stage is useful evidence; the team should not persuade an unsuitable customer into a pilot.</p>
+      <p>Initial partners requiring enterprise procurement, extensive integrations, customer-specific hosting or a regulated deployment should be avoided until product value is demonstrated.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> optimise customer selection for learning speed and decision authority—not logo prestige.</p></div>
+      <p class="transition">Next: confront how much of the proposed product is already available in the market.</p>
+      <a class="back-to-slide" href="index.html#roi">← Return to slide 06</a>
+    </article>
+
+    <article class="note" id="market">
+      <span class="slide-number">Slide 07 · Competitive reality</span>
+      <h2>Trusted finance workflows are already a product category.</h2>
+      <p>Broad FP&amp;A vendors are no longer offering only dashboards. Products such as Abacum and Datarails describe company-specific financial context, trusted data, guided analysis, clarifying questions, confirmation, traceable results and editable finance outputs. This means “semantics + evidence + approval” is a competitive baseline rather than a distinctive position.</p>
+      <p>Open-source infrastructure also reduces the value of building a generic semantic or MCP layer. The dbt MCP server exposes project context, semantic SQL and lineage. WrenAI provides a governed context layer and text-to-SQL. OpenBB makes broad investment analysis a particularly crowded alternative.</p>
+      <p>ChartMindAI’s provisional advantage is smaller commitment: existing exports, no platform migration, service-assisted onboarding and one exact reporting job. That is a speed-to-proof hypothesis, not a durable moat.</p>
+      <p>Evidence: <a href="https://www.abacum.ai/product/intelligence">Abacum</a>, <a href="https://support.datarails.com/hc/en-us/articles/25257415989916-Introduction-to-Datarails-AI-Agents">Datarails</a>, <a href="https://github.com/dbt-labs/dbt-mcp">dbt MCP</a>, <a href="https://github.com/Canner/WrenAI">WrenAI</a> and <a href="https://github.com/OpenBB-finance/OpenBB">OpenBB</a>.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> compete on one job and rapid proof—not feature breadth or infrastructure.</p></div>
+      <p class="transition">Next: replace the premature moat narrative with an evidence-building loop.</p>
+      <a class="back-to-slide" href="index.html#market">← Return to slide 07</a>
+    </article>
+
+    <article class="note" id="moat">
+      <span class="slide-number">Slide 08 · Right to learn</span>
+      <h2>Earn a right to learn before claiming defensibility.</h2>
+      <p>ChartMindAI does not currently have a moat. MCP, models, chart generation, semantic layers, audit logs and presentation exports are increasingly available from platforms and open source. Customer definitions, examples and approval histories may also be confidential and organisation-specific, so they cannot automatically become a shared asset.</p>
+      <p>The first meaningful asset is a demonstrated learning loop: work with a representative customer, build a golden workflow, capture edge cases and regression tests, reduce bespoke effort in the next cycle and repeat the outcome with another similar customer.</p>
+      <p>During the first 90 days, the team should try to earn two customers completing two cycles, one substantially reusable schema, a test pack that catches material regressions and continued demand after founder assistance is reduced.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> the immediate objective is repeatability. Defensibility can only be investigated after that exists.</p></div>
+      <p class="transition">Next: constrain the ambition to the capacity of the actual team.</p>
+      <a class="back-to-slide" href="index.html#moat">← Return to slide 08</a>
+    </article>
+
+    <article class="note" id="buyer">
+      <span class="slide-number">Slide 09 · Team and capacity</span>
+      <h2>Enough capacity for two proofs—not a platform.</h2>
+      <p>The team consists of six or seven part-time people contributing approximately ten hours each per week. The working allocation is about 30 engineering hours, 30 commercial hours and up to 10 flexible hours for coordination and quality assurance.</p>
+      <p>That is enough for focused discovery and two controlled pilots. It is not enough to build and support a broad finance platform.</p>
+      <p>Available public evidence suggests relevant finance, investing, full-stack and cloud experience. The existing codebase demonstrates MCP, charting, authentication, quota and deployment work. However, public evidence does not prove exact availability, depth of ownership, who will lead sales or who will enforce product focus. Four supplied profiles were not publicly readable, so no conclusions were inferred from them.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> the credible envelope is two service-assisted pilots, one workflow, one deployment pattern and a small evaluation suite.</p></div>
+      <p class="transition">Next: define how to learn closely from customers without disguising bespoke services as product progress.</p>
+      <a class="back-to-slide" href="index.html#buyer">← Return to slide 09</a>
+    </article>
+
+    <article class="note" id="partner">
+      <span class="slide-number">Slide 10 · Design partner</span>
+      <h2>Learn manually—without hiding a services business.</h2>
+      <p>Manual and service-assisted work is appropriate while the team is learning. The danger is that customers may value the founders’ analysis and technical labour rather than a repeatable product.</p>
+      <p>The engagement should establish a baseline, define the workflow contract, build a thin prototype, run the first live cycle, capture rules and exceptions, then run a second cycle. Every activity should be classified as reusable product work, customer configuration, manual operations or customer-specific development.</p>
+      <p>Pricing is intentionally unspecified because the earlier range lacked evidence. Instead, the team should seek a credible commercial signal: an invoice, deposit, signed conversion trigger or another commitment costly enough to demonstrate genuine intent. The objective is to learn how the customer perceives value, not optimise the first contract.</p>
+      <p>Guidance: <a href="https://a16z.com/a-framework-for-finding-a-design-partner/">a16z design-partner framework</a>.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> use hands-on delivery to accelerate learning while measuring whether the product—not founder labour—creates the value.</p></div>
+      <p class="transition">Next: establish decision rules that prevent enthusiasm from replacing evidence.</p>
+      <a class="back-to-slide" href="index.html#partner">← Return to slide 10</a>
+    </article>
+
+    <article class="note" id="evidence-gates">
+      <span class="slide-number">Slide 11 · Evidence gates</span>
+      <h2>Make the strategy earn priority.</h2>
+      <p>The thresholds are management rules, not external market benchmarks. They exist to prevent narrative momentum and feature completion from being mistaken for demand.</p>
+      <ul>
+        <li><strong>Pain — 5 of 8:</strong> matched operators independently describe substantially the same costly job.</li>
+        <li><strong>Access — 3:</strong> prospects share complete artifact sets and required definitions.</li>
+        <li><strong>Commercial pull — 2:</strong> customers commit before extensive custom development.</li>
+        <li><strong>Repetition — 2 × 2:</strong> two customers each complete two live cycles.</li>
+        <li><strong>Quality — zero:</strong> no unexplained material errors remain at sign-off.</li>
+        <li><strong>Continued value — one or more:</strong> at least one customer asks to continue at an agreed price.</li>
+      </ul>
+      <p>Commit more if the critical gates pass and delivery is substantially reusable. Revise once if the pain repeats but the segment or pack changes. Stop if access, commercial pull, quality or repeatability is absent.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> progress is defined by customer evidence, not by the number of features completed.</p></div>
+      <p class="transition">Next: identify the assumptions most likely to invalidate the strategy.</p>
+      <a class="back-to-slide" href="index.html#evidence-gates">← Return to slide 11</a>
+    </article>
+
+    <article class="note" id="risks">
+      <span class="slide-number">Slide 12 · Risks</span>
+      <h2>Test what can kill the strategy before polishing it.</h2>
+      <h3>Demand</h3>
+      <p>Monthly reporting may be inefficient without being urgent enough to fund a new product. Artifact access and commercial commitment are stronger tests than expressions of interest.</p>
+      <h3>Services</h3>
+      <p>Definitions, source formats and reporting conventions may make every implementation different. If most work remains customer-specific after cycle two, the product pattern is weak.</p>
+      <h3>Trust</h3>
+      <p>If a finance operator must reperform every calculation or extensively rewrite the narrative, review cost erases the gain. Total preparation and review time must be compared with the baseline.</p>
+      <h3>Governance</h3>
+      <p>Routine internal reporting is not automatically an EU AI Act high-risk use, but the customer, data, intended use and deployment model can change the analysis. Opportunities requiring custom hosting, long procurement or deep integration should be postponed while the team is part-time.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> the first 90 days should actively search for weak urgency, excessive customisation, insufficient trust and unaffordable buyer requirements.</p></div>
+      <p class="transition">Next: convert these risks and evidence gates into a capacity-capped operating plan.</p>
+      <a class="back-to-slide" href="index.html#risks">← Return to slide 12</a>
+    </article>
+
+    <article class="note" id="plan">
+      <span class="slide-number">Slide 13 · 90-day plan</span>
+      <h2>Produce two credible wins—or stop.</h2>
+      <h3>Days 1–15 · Recruit and baseline</h3>
+      <p>Conduct 12–15 matched conversations and at least five artifact walkthroughs. Establish current preparation time, review loops, recurring problems, the operator and the decision-maker. Engineering uses the existing product and a thin demonstration; it does not begin platform work.</p>
+      <h3>Days 16–30 · Select and contract</h3>
+      <p>Proceed only if the pain repeats. Seek three complete artifact sets, two commercial commitments, one agreed workflow contract and one golden test pack.</p>
+      <h3>Days 31–60 · Deliver cycle one</h3>
+      <p>Run two service-assisted pilots with no more than three exports. Measure preparation time, review time, review loops, errors, exceptions, traceability and customer-specific engineering hours.</p>
+      <h3>Days 61–90 · Repeat and decide</h3>
+      <p>Complete the second cycle, test whether definitions and checks can be reused, measure whether bespoke effort falls, and ask for continued paid use. Then commit more, revise once or stop.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> the team is being asked for 90 disciplined days to create evidence—not for faith in a broad platform strategy.</p></div>
+      <p class="transition">Next: explain how evidence, inference and uncertainty are separated.</p>
+      <a class="back-to-slide" href="index.html#plan">← Return to slide 13</a>
+    </article>
+
+    <article class="note" id="sources">
+      <span class="slide-number">Slide 14 · Evidence method</span>
+      <h2>Separate what is known from what must be tested.</h2>
+      <p><strong>Established evidence</strong> is directly supported by independent research, official documentation, public products, the codebase or private interviews. It establishes finance pain, spreadsheet prevalence, the need for controls, the competitive baseline and existing technical foundations. It does not prove product-market fit.</p>
+      <p><strong>Reasonable inference</strong> is the strategic synthesis: an export-first brief appears to be the fastest low-risk experiment for this team. It is not presented as a market fact.</p>
+      <p><strong>Unresolved uncertainty</strong> includes the exact ICP, urgency, price, ROI, retention, data readiness, implementation effort, repeatability and sales ownership.</p>
+      <p>The anonymous discovery interviews directionally reinforce the need for templates, metadata, clarification, permissions, expert judgement, deployment control and a specific vertical task with an internal champion. They are not treated as statistically representative, and speaker or organisation identities are not disclosed.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> the recommendation is evidence-led but deliberately falsifiable.</p></div>
+      <p class="transition">Next: provide direct access to the material external and local evidence.</p>
+      <a class="back-to-slide" href="index.html#sources">← Return to slide 14</a>
+    </article>
+
+    <article class="note" id="source-register">
+      <span class="slide-number">Slide 15 · Source register</span>
+      <h2>Direct links to the material evidence.</h2>
+      <p>The final presentation slide is the research appendix. It links directly to FP&amp;A pain research, reliability benchmarks, governance frameworks, current product documentation, open-source repositories, MCP platform documentation, design-partner guidance and the publicly readable parts of the team evidence.</p>
+      <p>Vendor pages are used to establish what competitors claim their products can do; they are not treated as independent proof of customer outcomes. Recent benchmark preprints are clearly labelled as preliminary. Private interviews remain anonymous and directional.</p>
+      <p>Four supplied team profiles were not publicly readable, so no conclusions were inferred from their absence. All visuals in the presentation are original HTML, CSS or SVG; no third-party logos or external visual assets are embedded.</p>
+      <div class="meaning"><p><strong>Meaning:</strong> every material external claim can be inspected, while private evidence and uncertainty remain appropriately bounded.</p></div>
+      <a class="back-to-slide" href="index.html#source-register">← Return to slide 15</a>
+    </article>
+  </main>
+
+  <footer>ChartMindAI strategy companion · evidence current to 20 July 2026</footer>
+</body>
+</html>
